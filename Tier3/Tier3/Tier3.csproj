@@ -15,11 +15,4 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.11" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Models\Burial" />
-      <Folder Include="Models\Client" />
-      <Folder Include="Models\Employee" />
-      <Folder Include="Models\Preference" />
-    </ItemGroup>
-
 </Project>
