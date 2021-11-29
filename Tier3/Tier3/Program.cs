@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Tier3.Networking.Communication;
 
 namespace Tier3
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello !");
+            SocketServer socketServer = new SocketServer();
+            socketServer.StartServer();
         }
     }
 }
