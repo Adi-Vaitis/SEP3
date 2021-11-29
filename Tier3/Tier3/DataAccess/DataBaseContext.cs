@@ -21,7 +21,7 @@ namespace Tier3.DataAccess
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(
-                @"Data Source = C:\Users\sandu\RiderProjects\SEP3\Tier3\Tier3\Tier3.db ");
+                @"Data Source = C:\Users\vaiti\Documents\GitHub\SEP3\Tier3\Tier3\Tier3.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

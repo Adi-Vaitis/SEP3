@@ -15,4 +15,11 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.11" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Networking\Burial" />
+      <Folder Include="Networking\Client" />
+      <Folder Include="Networking\Communication" />
+      <Folder Include="Networking\Preference" />
+    </ItemGroup>
+
 </Project>
