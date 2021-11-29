@@ -48,7 +48,7 @@ namespace Tier3.DataAccess
             modelBuilder.Entity<Burial>()
                 .HasOne<Client>(b => b.Client)
                 .WithMany(b => b.Burials)
-                .HasForeignKey(b => b.Client.Id);
+                .HasForeignKey(b => b.ClientId);
 
             modelBuilder.Entity<BurialPreference>()
                 .HasKey(bp => new
