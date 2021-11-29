@@ -15,7 +15,7 @@ public class ClientConnection implements SocketClient
   @Override public void startClient()
   {
     try{
-      new Thread(() -> communicate(new NetworkPackage(NetworkType.CONNECTION, "HTHDataabase"))).start();
+      new Thread(() -> communicate(new NetworkPackage(NetworkType.CONNECTION, "conFromTier2"))).start();
     }
     catch ( Exception e ){
       e.printStackTrace();
