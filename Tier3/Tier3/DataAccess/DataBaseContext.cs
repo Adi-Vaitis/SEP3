@@ -7,7 +7,7 @@ using Tier3.Models.Preference;
 
 namespace Tier3.DataAccess
 {
-    public class DataBaseContext
+    public class DataBaseContext : DbContext
     {
         
         public DbSet<Burial> Burial { get; set; }
@@ -18,7 +18,11 @@ namespace Tier3.DataAccess
         public DbSet<ClientBurial> ClientBurials { get; set; }
         public DbSet<ClientPreference> ClientPreferences { get; set; }
         
-        
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlite(
+                @"Data Source = C:\Users\sandu\RiderProjects\SEP3\Tier3\Tier3\Tier3.db ");
+        }
         
     }
 }
