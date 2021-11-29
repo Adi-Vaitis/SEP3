@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace Tier3.Models.Client
+namespace Tier_1.Models.Client
 {
     public class Client
     {
