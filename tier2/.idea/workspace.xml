@@ -14,7 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37494912-d7d9-4642-a161-4630ef32d8d7" name="Default Changelist" comment="Tier 2 connected to tier 3">
-      <change beforePath="$PROJECT_DIR$/tier2/src/main/java/services/communication/ClientConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/tier2/src/main/java/services/communication/ClientConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_2021_12_02_PM_[Default_Changelist]/shelved.patch" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_2021_12_02_PM_[Default_Changelist]/shelved.patch" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_2021_12_02_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_2021_12_02_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tier2/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tier2/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638185953551</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tier 2 connected to tier 3">
+      <created>1638186046744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638186046744</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,10 +197,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1638182351797" />
-    <state x="361" y="133" key="Vcs.Push.Dialog.v2" timestamp="1638185955684">
+    <state x="361" y="133" key="Vcs.Push.Dialog.v2" timestamp="1638186050902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="133" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1638185955684" />
+    <state x="361" y="133" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1638186050902" />
     <state x="595" y="327" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638183733951">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

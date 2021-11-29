@@ -21,6 +21,12 @@ namespace Tier_1.Models.Client
         [JsonPropertyName("burials")]
         public IList<Burial.Burial> Burials { get; set; }
 
+        public Client(string username, string password)
+        {
+            Username = username;
+            Password = password;
+        }
+
         public Client(string username, string name, string password)
         {
             Username = username;
