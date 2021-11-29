@@ -17,8 +17,6 @@
 
     <ItemGroup>
       <Folder Include="Networking\Burial" />
-      <Folder Include="Networking\Client" />
-      <Folder Include="Networking\Communication" />
       <Folder Include="Networking\Preference" />
     </ItemGroup>
 
