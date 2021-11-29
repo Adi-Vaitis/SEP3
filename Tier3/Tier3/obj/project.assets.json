@@ -1075,19 +1075,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sandu\\.nuget\\packages\\": {}
+    "C:\\Users\\vaiti\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sandu\\RiderProjects\\SEP3\\Tier3\\Tier3\\Tier3.csproj",
+      "projectUniqueName": "C:\\Users\\vaiti\\Documents\\GitHub\\SEP3\\Tier3\\Tier3\\Tier3.csproj",
       "projectName": "Tier3",
-      "projectPath": "C:\\Users\\sandu\\RiderProjects\\SEP3\\Tier3\\Tier3\\Tier3.csproj",
-      "packagesPath": "C:\\Users\\sandu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sandu\\RiderProjects\\SEP3\\Tier3\\Tier3\\obj\\",
+      "projectPath": "C:\\Users\\vaiti\\Documents\\GitHub\\SEP3\\Tier3\\Tier3\\Tier3.csproj",
+      "packagesPath": "C:\\Users\\vaiti\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vaiti\\Documents\\GitHub\\SEP3\\Tier3\\Tier3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sandu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\vaiti\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
