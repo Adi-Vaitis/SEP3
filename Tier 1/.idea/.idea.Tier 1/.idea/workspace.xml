@@ -5,13 +5,8 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="model classes">
-      <change afterPath="$PROJECT_DIR$/Tier 1/Data/ClientService/ClientService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tier 1/Data/ClientService/IClientService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Data/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Data/WeatherForecastService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/FetchData.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Startup.cs" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="implemented service class">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Authentication/CustomAuthenticationStateProvider.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,7 @@
       <updated>1638171317583</updated>
       <workItem from="1638171324866" duration="56000" />
       <workItem from="1638171409132" duration="362000" />
-      <workItem from="1638186696685" duration="1768000" />
+      <workItem from="1638186696685" duration="2161000" />
     </task>
     <task id="LOCAL-00001" summary="Tier 1">
       <created>1638171366674</created>
@@ -123,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638188724622</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="implemented service class">
+      <created>1638189266617</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638189266617</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +153,7 @@
     <MESSAGE value="testing" />
     <MESSAGE value="Implementing tier 1" />
     <MESSAGE value="model classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="model classes" />
+    <MESSAGE value="implemented service class" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented service class" />
   </component>
 </project>
