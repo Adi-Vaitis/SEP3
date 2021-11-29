@@ -83,14 +83,42 @@ using Tier_1.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\FetchData.razor"
+#line 11 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
 using Tier_1.Data;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/fetchdata")]
-    public partial class FetchData : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 12 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
+using Tier_1.Data.ClientService;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Login.razor"
+using Tier_1.Authentication;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Login.razor"
+using Tier_1.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Login.razor"
+using Tier_1.Models.Client;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Login")]
+    public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -98,20 +126,57 @@ using Tier_1.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 41 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\FetchData.razor"
-       
-    private WeatherForecast[] forecasts;
+#line 35 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Login.razor"
+ 
+    private string _username;
+    private string _password;
+    private string _errorMessage;
+    private Client _client;
 
-    protected override async Task OnInitializedAsync()
+
+    private async Task PerformLogin()
     {
-        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        _errorMessage = "";
+         try
+         {
+             Client client = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
+             _username = "";
+             _password = "";
+             NavigationManager.NavigateTo("/MyPage");
+         }
+         catch (Exception e)
+         {
+             _errorMessage = "Incorrect credentials";
+         }
     }
 
+    private void PerformLogout()
+    {
+        _errorMessage = "";
+        _username = "";
+        _password = "";
+        try
+        {
+            ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
+            NavigationManager.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+
+    private void GoToRegisterPage()
+    {
+        NavigationManager.NavigateTo("/RegisterAccount");
+    }
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private WeatherForecastService ForecastService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }
     }
 }
 #pragma warning restore 1591

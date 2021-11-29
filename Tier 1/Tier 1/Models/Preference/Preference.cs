@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace Tier3.Models.Preference
+namespace Tier_1.Models.Preference
 {
     public class Preference
     {
@@ -12,6 +11,22 @@ namespace Tier3.Models.Preference
         public int BurialId { get; set; }
         [JsonPropertyName("description"), Required]
         public string Description { get; set; }
-        
+
+        public Preference(int id, int burialId, string description)
+        {
+            Id = id;
+            BurialId = burialId;
+            Description = description;
+        }
+
+        public Preference(int burialId, string description)
+        {
+            BurialId = burialId;
+            Description = description;
+        }
+
+        public Preference()
+        {
+        }
     }
 }

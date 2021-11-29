@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace Tier3.Models.Burial
+namespace Tier_1.Models.Burial
 {
     public class Burial
     {
@@ -25,5 +25,11 @@ namespace Tier3.Models.Burial
         public int ClientId { get; set; }
         [JsonPropertyName("comments")]
         public string Comments { get; set; }
+
+        public Burial(IList<Preference.Preference> preferenceForBurial, int clientId)
+        {
+            PreferenceForBurial = preferenceForBurial;
+            ClientId = clientId;
+        }
     }
 }

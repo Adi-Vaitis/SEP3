@@ -5,65 +5,36 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Tier 1/Tier 1.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Tier 1.csproj" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="login system">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/Login.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/App.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/App.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Models/Client/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Models/Client/Client.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/_Imports.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/_Imports.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/ref/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/ref/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/FetchData.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/FetchData.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorComponent.input.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorComponent.input.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorCoreGenerate.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.TagHelpers.output.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tier2/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_11_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_55.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_55.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_55.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_mongodb_bson_4_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_mongodb_mongodb_driver_core_4_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_mongodb_mongodb_driver_sync_4_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_3_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_aop_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_beans_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_context_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_core_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_expression_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_test_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_tx_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_web_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/libraries/Maven__org_yaml_snakeyaml_1_29.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tier2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/ref/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/ref/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tier2/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_2021_12_02_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tier2/.idea/shelf/Uncommitted_changes_before_Update_at_11_29_2021_12_02_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../tier2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tier2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/tier2/src/main/java/tier2/tier2/Tier2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tier2/tier2/src/main/java/tier2/tier2/Tier2Application.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +42,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21aFVnVMs7HdS4Yn4u5VU4kQza2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -131,7 +109,7 @@
       <updated>1638171317583</updated>
       <workItem from="1638171324866" duration="56000" />
       <workItem from="1638171409132" duration="362000" />
-      <workItem from="1638186696685" duration="387000" />
+      <workItem from="1638186696685" duration="2930000" />
     </task>
     <task id="LOCAL-00001" summary="Tier 1">
       <created>1638171366674</created>
@@ -154,7 +132,35 @@
       <option name="project" value="LOCAL" />
       <updated>1638171562242</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implementing tier 1">
+      <created>1638187317828</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638187317828</updated>
+    </task>
+    <task id="LOCAL-00005" summary="model classes">
+      <created>1638188724622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638188724622</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implemented service class">
+      <created>1638189266617</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1638189266617</updated>
+    </task>
+    <task id="LOCAL-00007" summary="login system">
+      <created>1638189656330</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1638189656330</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +186,10 @@
     <MESSAGE value="Tier 1" />
     <MESSAGE value="yes" />
     <MESSAGE value="testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing" />
+    <MESSAGE value="Implementing tier 1" />
+    <MESSAGE value="model classes" />
+    <MESSAGE value="implemented service class" />
+    <MESSAGE value="login system" />
+    <option name="LAST_COMMIT_MESSAGE" value="login system" />
   </component>
 </project>

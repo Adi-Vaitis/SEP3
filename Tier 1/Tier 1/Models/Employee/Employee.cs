@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace Tier3.Models.Employee
+namespace Tier_1.Models.Employee
 {
     public class Employee
     {
@@ -11,5 +11,22 @@ namespace Tier3.Models.Employee
         public string Username { get; set; }
         [JsonPropertyName("password"), Required]
         public string Password { get; set; }
+
+        public Employee(int id, string username, string password)
+        {
+            Id = id;
+            Username = username;
+            Password = password;
+        }
+
+        public Employee(string username, string password)
+        {
+            Username = username;
+            Password = password;
+        }
+
+        public Employee()
+        {
+        }
     }
 }
