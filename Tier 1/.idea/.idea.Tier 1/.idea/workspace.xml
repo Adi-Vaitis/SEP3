@@ -5,8 +5,8 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="logout page">
-      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/FirstPage.razor" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="main page draft">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/RegisterAccount.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
       <updated>1638171317583</updated>
       <workItem from="1638171324866" duration="56000" />
       <workItem from="1638171409132" duration="362000" />
-      <workItem from="1638186696685" duration="6724000" />
+      <workItem from="1638186696685" duration="7135000" />
     </task>
     <task id="LOCAL-00001" summary="Tier 1">
       <created>1638171366674</created>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638263477356</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="main page draft">
+      <created>1638263794302</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1638263794302</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +223,7 @@
     <MESSAGE value="getting a client by username" />
     <MESSAGE value="implemented all the methods for the client" />
     <MESSAGE value="logout page" />
-    <option name="LAST_COMMIT_MESSAGE" value="logout page" />
+    <MESSAGE value="main page draft" />
+    <option name="LAST_COMMIT_MESSAGE" value="main page draft" />
   </component>
 </project>
