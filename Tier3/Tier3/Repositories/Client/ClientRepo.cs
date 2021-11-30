@@ -28,7 +28,6 @@ namespace Tier3.Repositories.Client
 
                 client.Burials = new List<Models.Burial.Burial>();
                 client.ClientBurials = new List<ClientBurial>();
-                client.ClientPreferences = new List<ClientPreference>();
                 await dbCtx.Clients.AddAsync(client);
                 Console.WriteLine("Account created");
                 await dbCtx.SaveChangesAsync();
@@ -92,14 +91,29 @@ namespace Tier3.Repositories.Client
             return "Client updated";
         }
 
-        public Task<Models.Client.Client> GetClientByUsername(string username)
+        public async Task<Models.Client.Client> GetClientByUsername(string username)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Client.Client client = await dbCtx.Clients
+                    .Include(cl => cl.Burials)
+                    .FirstAsync(c => c.Username.Equals(username));
+
+                return client;
+            }
         }
 
-        public Task<Models.Client.Client> GetClientById(int clientId)
+        public async Task<Models.Client.Client> GetClientById(int clientId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Client.Client client = await dbCtx.Clients
+                    .Include(cl => cl.Burials)
+                    .ThenInclude(c => c.BurialPreferences)
+                    .FirstAsync(cl => cl.Id == clientId);
+
+                return client;
+            }
         }
 
         public Task<IList<Models.Client.Client>> GetBurialsClient(int clientId)
