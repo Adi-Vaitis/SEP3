@@ -10,6 +10,8 @@ namespace Tier3
         {
             SocketServer socketServer = new SocketServer();
             socketServer.StartServer();
+            Console.WriteLine("This is just a test to see if everything else messed up");
+
         }
     }
 }
