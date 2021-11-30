@@ -10,9 +10,21 @@ namespace Tier_1.Data.ClientService
 {
     public class ClientService : IClientService
     {
-        public Task<string> CreateClientAccount(Client client)
+        public async Task<string> CreateClientAccount(Client client)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string clientSerialized = JsonSerializer.Serialize(client);
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri("https://localhost:8080/register"),
+                Content = new StringContent(clientSerialized, Encoding.UTF8, "application/json")
+            };
+
+            var response = httpClient.SendAsync(request).ConfigureAwait(false);
+            var responseInfo = response.GetAwaiter().GetResult();
+            string s = await responseInfo.Content.ReadAsStringAsync();
+            return s;
         }
 
         public Task<Client> GetClient(string username, string password)
