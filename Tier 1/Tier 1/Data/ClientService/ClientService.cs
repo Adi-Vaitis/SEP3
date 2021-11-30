@@ -69,9 +69,14 @@ namespace Tier_1.Data.ClientService
             return s;
         }
 
-        public Task<Client> GetClientByUsername(string username)
+        public async Task<Client> GetClientByUsername(string username)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string uri = "https://localhost:8080/accounts?Username=" + username;
+            string message = await httpClient.GetStringAsync(uri);
+
+            Client result = JsonSerializer.Deserialize<Client>(message);
+            return result;
         }
 
         public Task<Client> GetClientById(int clientId)
