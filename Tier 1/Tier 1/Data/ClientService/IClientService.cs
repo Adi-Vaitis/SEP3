@@ -7,7 +7,6 @@ namespace Tier_1.Data.ClientService
     public interface IClientService
     {
         Task<string> CreateClientAccount(Models.Client.Client client);
-        Task<Models.Client.Client> GetClient(string username, string password);
         Task<Client> ValidateClient(Client client);
         Task DeleteClient(int clientId);
         Task<string> EditClientAccount(Models.Client.Client client);

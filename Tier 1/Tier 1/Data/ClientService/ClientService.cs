@@ -10,14 +10,21 @@ namespace Tier_1.Data.ClientService
 {
     public class ClientService : IClientService
     {
-        public Task<string> CreateClientAccount(Client client)
+        public async Task<string> CreateClientAccount(Client client)
         {
-            throw new System.NotImplementedException();
-        }
+            HttpClient httpClient = new HttpClient();
+            string clientSerialized = JsonSerializer.Serialize(client);
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri("https://localhost:8080/register"),
+                Content = new StringContent(clientSerialized, Encoding.UTF8, "application/json")
+            };
 
-        public Task<Client> GetClient(string username, string password)
-        {
-            throw new System.NotImplementedException();
+            var response = httpClient.SendAsync(request).ConfigureAwait(false);
+            var responseInfo = response.GetAwaiter().GetResult();
+            string s = await responseInfo.Content.ReadAsStringAsync();
+            return s;
         }
 
         public async Task<Client> ValidateClient(Client client)
@@ -38,39 +45,83 @@ namespace Tier_1.Data.ClientService
             return JsonSerializer.Deserialize<Client>(s);
         }
 
-        public Task DeleteClient(int clientId)
+        public async Task DeleteClient(int clientId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            HttpResponseMessage responseMessage = await httpClient.DeleteAsync("http://localhost:8080/delete/" + clientId);
+            Console.WriteLine(responseMessage.StatusCode.ToString());
         }
 
-        public Task<string> EditClientAccount(Client client)
+        public async Task<string> EditClientAccount(Client client)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string clientSerialized = JsonSerializer.Serialize(client);
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri("https://localhost:8080/update"),
+                Content = new StringContent(clientSerialized, Encoding.UTF8, "application/json")
+            };
+
+            var response = httpClient.SendAsync(request).ConfigureAwait(false);
+            var responseInfo = response.GetAwaiter().GetResult();
+            string s = await responseInfo.Content.ReadAsStringAsync();
+            return s;
         }
 
-        public Task<Client> GetClientByUsername(string username)
+        public async Task<Client> GetClientByUsername(string username)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string uri = "https://localhost:8080/accounts?Username=" + username;
+            string message = await httpClient.GetStringAsync(uri);
+
+            Client result = JsonSerializer.Deserialize<Client>(message);
+            return result;
         }
 
-        public Task<Client> GetClientById(int clientId)
+        public async Task<Client> GetClientById(int clientId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string uri = "https://localhost:8080/accounts/" + clientId;
+            string message = await httpClient.GetStringAsync(uri);
+            Client result = JsonSerializer.Deserialize<Client>(message);
+            return result;
         }
 
-        public Task<IList<Client>> GetBurialsClient(int clientId)
+        public async Task<IList<Client>> GetBurialsClient(int clientId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string uri = "https://localhost:8080/burialsForTheClient/" + clientId;
+            string message = await httpClient.GetStringAsync(uri);
+
+            Console.WriteLine(message);
+            
+            IList<Client> result = JsonSerializer.Deserialize<IList<Client>>(message);
+            return result;
         }
 
-        public Task AddPreferenceToBurial(int burialId, int preferenceId)
+        public async Task AddPreferenceToBurial(int burialId, int preferenceId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            StringContent content = new StringContent(
+                String.Concat(preferenceId),
+                Encoding.UTF8,
+                "application/json"
+            );
+            HttpResponseMessage responseMessage = await httpClient.PostAsync("https://localhost:8080/addPreference/" + burialId, content);
+            Console.WriteLine(responseMessage.StatusCode.ToString());
         }
 
-        public Task DeletePreferenceFromBurial(int burialId, int preferenceId)
+        public async Task DeletePreferenceFromBurial(int burialId, int preferenceId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            StringContent content = new StringContent(
+                String.Concat(preferenceId),
+                Encoding.UTF8,
+                "application/json"
+            );
+            HttpResponseMessage responseMessage = await httpClient.PostAsync("https://localhost:8080/deletePreference/" + burialId, content);
+            Console.WriteLine(responseMessage.StatusCode.ToString());
         }
     }
 }

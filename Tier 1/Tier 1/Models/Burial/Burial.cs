@@ -7,9 +7,9 @@ namespace Tier_1.Models.Burial
 {
     public class Burial
     {
-        [JsonPropertyName("id")]
+        [JsonPropertyName("id"), Required]
         public int Id { get; set; }
-        [JsonPropertyName("preferences")]
+        [JsonPropertyName("preferences"), Required]
         public IList<Preference.Preference> PreferenceForBurial { get; set; }
         [JsonPropertyName("location"), Required]
         public string Location { get; set; }
@@ -19,9 +19,7 @@ namespace Tier_1.Models.Burial
         public int NumberOfParticipants { get; set; }
         [JsonPropertyName("name"), Required]
         public string FullNameOfTheDeadMan { get; set; }
-        [JsonPropertyName("client")]
-        public Client.Client Client { get; set; }
-        [JsonPropertyName("clientId")]
+        [JsonPropertyName("clientId"), Required]
         public int ClientId { get; set; }
         [JsonPropertyName("comments")]
         public string Comments { get; set; }
@@ -30,6 +28,10 @@ namespace Tier_1.Models.Burial
         {
             PreferenceForBurial = preferenceForBurial;
             ClientId = clientId;
+        }
+
+        public Burial()
+        {
         }
     }
 }
