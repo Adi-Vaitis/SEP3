@@ -1,4 +1,5 @@
-﻿using System.Net.Sockets;
+﻿using System;
+using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
 using Tier3.Repositories.Client;
@@ -23,6 +24,38 @@ namespace Tier3.Networking.Client
             string password = test.Password;
             client = await clientRepo.GetClient(username, password);
             string reply = JsonSerializer.Serialize(client);
+            byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
+            stream.Write(bytesWrite, 0, bytesWrite.Length);
+        }
+
+        public async void CreateClientAccount(NetworkStream stream, string content)
+        {
+            Models.Client.Client client1 = JsonSerializer.Deserialize<Models.Client.Client>(content);
+            String input = await clientRepo.EditClientAccount(client1);
+            string reply = JsonSerializer.Serialize(input);
+            byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
+            stream.Write(bytesWrite, 0, bytesWrite.Length);
+        }
+        
+        public async void Delete(string content)
+        {
+            await clientRepo.DeleteClient(Int32.Parse(content));
+        }
+        
+        public async void GetAccountByUsername(NetworkStream stream, string content)
+        {
+            Models.Client.Client client1 = JsonSerializer.Deserialize<Models.Client.Client>(content);
+            string username = client1.Username;
+            client = await clientRepo.GetClientByUsername(username);
+            string reply = JsonSerializer.Serialize(client);
+            byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
+            stream.Write(bytesWrite, 0, bytesWrite.Length);
+        }
+        
+        public async void GetUserById(NetworkStream stream, string content)
+        {
+            Models.Client.Client client1 = await clientRepo.GetClientById(Int32.Parse(content));
+            string reply = JsonSerializer.Serialize(client1);
             byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
             stream.Write(bytesWrite, 0, bytesWrite.Length);
         }
