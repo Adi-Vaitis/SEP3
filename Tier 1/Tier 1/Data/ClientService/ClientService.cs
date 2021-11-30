@@ -27,11 +27,6 @@ namespace Tier_1.Data.ClientService
             return s;
         }
 
-        public Task<Client> GetClient(string username, string password)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public async Task<Client> ValidateClient(Client client)
         {
             HttpClient httpClient = new HttpClient();
@@ -50,14 +45,28 @@ namespace Tier_1.Data.ClientService
             return JsonSerializer.Deserialize<Client>(s);
         }
 
-        public Task DeleteClient(int clientId)
+        public async Task DeleteClient(int clientId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            HttpResponseMessage responseMessage = await httpClient.DeleteAsync("http://localhost:8080/delete/" + clientId);
+            Console.WriteLine(responseMessage.StatusCode.ToString());
         }
 
-        public Task<string> EditClientAccount(Client client)
+        public async Task<string> EditClientAccount(Client client)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string clientSerialized = JsonSerializer.Serialize(client);
+            var request = new HttpRequestMessage
+            {
+                Method = HttpMethod.Get,
+                RequestUri = new Uri("https://localhost:8080/update"),
+                Content = new StringContent(clientSerialized, Encoding.UTF8, "application/json")
+            };
+
+            var response = httpClient.SendAsync(request).ConfigureAwait(false);
+            var responseInfo = response.GetAwaiter().GetResult();
+            string s = await responseInfo.Content.ReadAsStringAsync();
+            return s;
         }
 
         public Task<Client> GetClientByUsername(string username)

@@ -5,13 +5,9 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="server connection works">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="register account method">
       <change beforePath="$PROJECT_DIR$/Tier 1/Data/ClientService/ClientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Data/ClientService/ClientService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Models/Burial/Burial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Models/Burial/Burial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Models/Employee/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Models/Employee/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Models/Preference/Preference.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Models/Preference/Preference.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tier2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../tier2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Data/ClientService/IClientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Data/ClientService/IClientService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +26,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
@@ -88,7 +85,7 @@
       <updated>1638171317583</updated>
       <workItem from="1638171324866" duration="56000" />
       <workItem from="1638171409132" duration="362000" />
-      <workItem from="1638186696685" duration="4511000" />
+      <workItem from="1638186696685" duration="4991000" />
     </task>
     <task id="LOCAL-00001" summary="Tier 1">
       <created>1638171366674</created>
@@ -146,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638190455497</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="register account method">
+      <created>1638261567235</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638261567235</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +181,7 @@
     <MESSAGE value="implemented service class" />
     <MESSAGE value="login system" />
     <MESSAGE value="server connection works" />
-    <option name="LAST_COMMIT_MESSAGE" value="server connection works" />
+    <MESSAGE value="register account method" />
+    <option name="LAST_COMMIT_MESSAGE" value="register account method" />
   </component>
 </project>
