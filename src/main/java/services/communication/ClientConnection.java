@@ -1,8 +1,8 @@
 package services.communication;
 
 import com.google.gson.Gson;
-import network.utility.NetworkPackage;
-import network.utility.NetworkType;
+import services.utility.NetworkPackage;
+import services.utility.NetworkType;
 
 import java.io.InputStream;
 import java.io.OutputStream;
