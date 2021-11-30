@@ -82,6 +82,20 @@ using Tier_1.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
+using Tier_1.Data;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
+using Tier_1.Data.ClientService;
+
+#line default
+#line hidden
+#nullable disable
     public partial class MainLayout : LayoutComponentBase
     {
         #pragma warning disable 1998
@@ -89,6 +103,28 @@ using Tier_1.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 15 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Shared\MainLayout.razor"
+ 
+    [CascadingParameter]
+    protected Task<AuthenticationState> AuthStat { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await base.OnInitializedAsync();
+        var user =
+            (await AuthStat).User;
+        if (!user.Identity.IsAuthenticated)
+        {
+            NavigationManager.NavigateTo($"/");
+        }
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }
     }
 }
 #pragma warning restore 1591

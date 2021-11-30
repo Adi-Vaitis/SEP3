@@ -1,0 +1,24 @@
+﻿@page "/"
+@inject NavigationManager NavigationManager
+@inherits LayoutComponentBase
+
+<div class="centered">
+    <h1><b>Highway to Heaven</b></h1>
+</div>
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-12" id="mainButtons">
+            <button type="button" @onclick="NavigateToLogin" class="mainButtons">Login</button>
+
+        </div>
+    </div>
+
+</div>
+
+@code {
+    private void NavigateToLogin()
+    {
+        NavigationManager.NavigateTo("/Login");
+    }
+}
