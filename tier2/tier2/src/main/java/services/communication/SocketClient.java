@@ -1,6 +1,6 @@
 package services.communication;
 
-import services.utility.NetworkPackage;
+import network.utility.NetworkPackage;
 
 public interface SocketClient
 {
