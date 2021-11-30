@@ -5,8 +5,8 @@ import models.Client;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import services.communication.SocketClient;
-import network.utility.NetworkPackage;
-import network.utility.NetworkType;
+import services.utility.NetworkPackage;
+import services.utility.NetworkType;
 
 @Component
 public class ClientAccountImpl implements ClientAccount
@@ -24,33 +24,4 @@ public class ClientAccountImpl implements ClientAccount
     String input = socketClient.communicate(networkPackage);
     return gson.fromJson(input, Client.class);
   }
-
-  @Override public String createClientAccount(Client client)
-  {
-    Gson gson = new Gson();
-    String serializedClient = gson.toJson(client);
-    NetworkPackage networkPackage = new NetworkPackage(NetworkType.REGISTER, serializedClient);
-    return socketClient.communicate(networkPackage);
-  }
-
-  @Override public String editClientAccount(Client client)
-  {
-    return null;
-  }
-
-  @Override public void deleteClient(int clientId)
-  {
-
-  }
-
-  @Override public Client getClientByUsername(String username)
-  {
-    return null;
-  }
-
-  @Override public Client getClientById(int clientId)
-  {
-    return null;
-  }
-
 }
