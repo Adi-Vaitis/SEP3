@@ -5,8 +5,8 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="getting a client by username">
-      <change beforePath="$PROJECT_DIR$/Tier 1/Data/ClientService/ClientService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Data/ClientService/ClientService.cs" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="implemented all the methods for the client">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/Logout.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,7 @@
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
@@ -86,7 +87,7 @@
       <updated>1638171317583</updated>
       <workItem from="1638171324866" duration="56000" />
       <workItem from="1638171409132" duration="362000" />
-      <workItem from="1638186696685" duration="5524000" />
+      <workItem from="1638186696685" duration="6414000" />
     </task>
     <task id="LOCAL-00001" summary="Tier 1">
       <created>1638171366674</created>
@@ -165,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638262254083</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="implemented all the methods for the client">
+      <created>1638262832778</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1638262832778</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +207,7 @@
     <MESSAGE value="register account method" />
     <MESSAGE value="Edit account and delete client methods implemented." />
     <MESSAGE value="getting a client by username" />
-    <option name="LAST_COMMIT_MESSAGE" value="getting a client by username" />
+    <MESSAGE value="implemented all the methods for the client" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented all the methods for the client" />
   </component>
 </project>

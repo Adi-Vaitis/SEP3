@@ -1,0 +1,26 @@
+﻿@page "/Logout"
+@using Tier_1.Models
+@using Tier_1.Authentication
+@using Tier_1.Models.Client
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+
+@code {
+    private Client client;
+
+    protected override async Task OnInitializedAsync()
+    {
+        client = ((CustomAuthenticationStateProvider) AuthenticationStateProvider).CachedUser;
+        try
+        {
+            ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
+            NavigationManager.NavigateTo("/");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        
+    }
+
+}
