@@ -79,24 +79,49 @@ namespace Tier_1.Data.ClientService
             return result;
         }
 
-        public Task<Client> GetClientById(int clientId)
+        public async Task<Client> GetClientById(int clientId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string uri = "https://localhost:8080/accounts/" + clientId;
+            string message = await httpClient.GetStringAsync(uri);
+            Client result = JsonSerializer.Deserialize<Client>(message);
+            return result;
         }
 
-        public Task<IList<Client>> GetBurialsClient(int clientId)
+        public async Task<IList<Client>> GetBurialsClient(int clientId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string uri = "https://localhost:8080/burialsForTheClient/" + clientId;
+            string message = await httpClient.GetStringAsync(uri);
+
+            Console.WriteLine(message);
+            
+            IList<Client> result = JsonSerializer.Deserialize<IList<Client>>(message);
+            return result;
         }
 
-        public Task AddPreferenceToBurial(int burialId, int preferenceId)
+        public async Task AddPreferenceToBurial(int burialId, int preferenceId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            StringContent content = new StringContent(
+                String.Concat(preferenceId),
+                Encoding.UTF8,
+                "application/json"
+            );
+            HttpResponseMessage responseMessage = await httpClient.PostAsync("https://localhost:8080/addPreference/" + burialId, content);
+            Console.WriteLine(responseMessage.StatusCode.ToString());
         }
 
-        public Task DeletePreferenceFromBurial(int burialId, int preferenceId)
+        public async Task DeletePreferenceFromBurial(int burialId, int preferenceId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            StringContent content = new StringContent(
+                String.Concat(preferenceId),
+                Encoding.UTF8,
+                "application/json"
+            );
+            HttpResponseMessage responseMessage = await httpClient.PostAsync("https://localhost:8080/deletePreference/" + burialId, content);
+            Console.WriteLine(responseMessage.StatusCode.ToString());
         }
     }
 }
