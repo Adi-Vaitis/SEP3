@@ -5,42 +5,8 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Counter.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/FirstPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/FirstPage.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Login.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Logout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Logout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/ref/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/ref/Tier 1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Counter.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Counter.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorComponent.input.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorComponent.input.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorCoreGenerate.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.TagHelpers.output.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/ref/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/ref/Tier 1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="Register page">
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
