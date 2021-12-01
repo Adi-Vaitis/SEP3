@@ -135,12 +135,45 @@ namespace Tier3.Repositories.Client
             }
         }
 
-        public Task AddPreferenceToBurial(int burialId, int preferenceId)
+        public async Task AddPreferenceToBurial(int burialId, int preferenceId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Burial.Burial burial = await dbCtx.Burial.FirstAsync(b => b.Id == burialId);
+                Models.Preference.Preference preference = await dbCtx.Preferences
+                    .Include(p => p.Description)
+                    .FirstAsync(p => p.Id == preferenceId);
+
+                BurialPreference burialPreference = new BurialPreference
+                {
+                    Burial = burial,
+                    BurialId = burialId,
+                    Preference = preference,
+                    PreferenceId = preferenceId
+                };
+                if (burial.BurialPreferences == null)
+                {
+                    burial.BurialPreferences = new List<BurialPreference>();
+                    burial.BurialPreferences.Add(burialPreference);
+                    Console.WriteLine("added because it was null");
+                }
+                else
+                {
+                    burial.BurialPreferences.Add(burialPreference);
+                    Console.WriteLine("added an existing one");
+                }
+
+                foreach (var variable in burial.BurialPreferences)
+                {
+                    Console.WriteLine("burialId= " + variable.BurialId + "\n Burial= " + variable.Burial + "preferenceId= " + variable.PreferenceId + "\n Preference= " + variable.Preference);
+                }
+
+                dbCtx.Update(burial);
+                await dbCtx.SaveChangesAsync();
+            }
         }
 
-        public Task DeletePreferenceFromBurial(int burialId, int preferenceId)
+        public async Task DeletePreferenceFromBurial(int burialId, int preferenceId)
         {
             throw new System.NotImplementedException();
         }
