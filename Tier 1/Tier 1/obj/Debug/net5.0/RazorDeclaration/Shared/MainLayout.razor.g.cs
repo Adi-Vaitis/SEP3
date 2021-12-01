@@ -116,7 +116,7 @@ using Tier_1.Data.ClientService;
             (await AuthStat).User;
         if (!user.Identity.IsAuthenticated)
         {
-            NavigationManager.NavigateTo($"/");
+            NavigationManager.NavigateTo($"/FirstPage");
         }
     }
 

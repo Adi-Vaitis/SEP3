@@ -3,8 +3,8 @@
 
 <div class="main">
     <div class="topmenu">
-        <TopMenu/>
-    </div>
+           <TopMenu/>
+       </div>
 
     <div class="content px-4">
         @Body
@@ -23,7 +23,7 @@
             (await AuthStat).User;
         if (!user.Identity.IsAuthenticated)
         {
-            NavigationManager.NavigateTo($"/");
+            NavigationManager.NavigateTo($"/FirstPage");
         }
     }
 }
