@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Tier3.DataAccess;
 using Tier3.Models;
 
@@ -26,9 +27,14 @@ namespace Tier3.Repositories.Preference
             }
         }
 
-        public Task<Models.Preference.Preference> GetPreference(int preferenceId)
+        public async Task<IList<Models.Preference.Preference>> GetPreference()
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                return await dbCtx.Preferences
+                    .Include(p => p.BurialPreferences)
+                    .ToListAsync();
+            }
         }
 
         public Task<string> EditPreference(Models.Preference.Preference preference)
