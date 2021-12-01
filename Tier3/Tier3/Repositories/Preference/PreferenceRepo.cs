@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Tier3.DataAccess;
@@ -69,9 +71,28 @@ namespace Tier3.Repositories.Preference
             }
         }
 
-        public async Task<Models.Preference.Preference> GetPreferenceByBurialId(int burialId)
+        public async Task<IList<Models.Preference.Preference>> GetPreferenceByBurialId(int burialId)
         {
-            throw new System.NotImplementedException();
+            _preferences = new List<Models.Preference.Preference>();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Burial.Burial burial = await dbCtx.Burial
+                    .Include(buri => buri.BurialPreferences)
+                    .ThenInclude(buri => buri.Preference)
+                    .FirstAsync(b => b.Id == burialId);
+                Console.WriteLine("Burial: " + burial.Id);
+                IList<BurialPreference> burialPreferences = burial.BurialPreferences.ToList();
+                foreach (var variable in burialPreferences)
+                {
+                    int id = variable.Preference.Id;
+                    Models.Preference.Preference preference = await dbCtx.Preferences
+                        .Include(p => p.Description)
+                        .FirstAsync(p => p.Id == id);
+                    _preferences.Add(preference);
+                }
+
+                return _preferences;
+            }
         }
     }
 }
