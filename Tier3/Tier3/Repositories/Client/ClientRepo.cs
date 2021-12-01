@@ -116,9 +116,23 @@ namespace Tier3.Repositories.Client
             }
         }
 
-        public Task<IList<Models.Client.Client>> GetBurialsClient(int clientId)
+        public async Task<IList<Models.Client.Client>> GetBurialsClient(int clientId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                IList<Models.Client.Client> clientList = new List<Models.Client.Client>();
+                foreach (var variable in dbCtx.ClientBurials)
+                {
+                    if (variable.ClientId == clientId)
+                    {
+                        Models.Client.Client burialForClient = await dbCtx.Clients
+                            .FirstAsync(c => c.Id == variable.ClientId);
+                        clientList.Add(burialForClient);
+                    }
+                }
+
+                return clientList;
+            }
         }
 
         public Task AddPreferenceToBurial(int burialId, int preferenceId)

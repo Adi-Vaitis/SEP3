@@ -158,7 +158,7 @@ using Tier_1.Models.Client;
         try
         {
             ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
-            NavigationManager.NavigateTo("/");
+            NavigationManager.NavigateTo("/FirstPage");
         }
         catch (Exception e)
         {

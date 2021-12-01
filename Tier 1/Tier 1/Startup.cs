@@ -30,9 +30,9 @@ namespace Tier_1
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
             services.AddScoped<IClientService, ClientService>();
-            
+            services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("Moderator", a => a.RequireAuthenticatedUser().RequireClaim("Username", "ADMIN"));
