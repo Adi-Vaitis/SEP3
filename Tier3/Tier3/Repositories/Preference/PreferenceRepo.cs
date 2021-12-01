@@ -37,9 +37,13 @@ namespace Tier3.Repositories.Preference
             }
         }
 
-        public Task<string> EditPreference(Models.Preference.Preference preference)
+        public async Task EditPreference(Models.Preference.Preference preference)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                dbCtx.Preferences.Update(preference);
+                await dbCtx.SaveChangesAsync();
+            }
         }
 
         public Task DeletePreference(int preferenceId)

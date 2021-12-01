@@ -7,7 +7,7 @@ namespace Tier3.Repositories.Preference
     {
         Task CreatePreference(Models.Preference.Preference preference);
         Task<IList<Models.Preference.Preference>> GetPreference();
-        Task<string> EditPreference(Models.Preference.Preference preference);
+        Task EditPreference(Models.Preference.Preference preference);
         Task DeletePreference(int preferenceId);
         Task<Models.Preference.Preference> GetPreferenceById(int preferenceId);
         Task<Models.Preference.Preference> GetPreferenceByBurialId(int burialId);
