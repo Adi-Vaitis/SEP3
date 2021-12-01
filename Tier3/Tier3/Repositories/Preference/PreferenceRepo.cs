@@ -46,9 +46,17 @@ namespace Tier3.Repositories.Preference
             }
         }
 
-        public Task DeletePreference(int preferenceId)
+        public async Task DeletePreference(int preferenceId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Preference.Preference preference = await dbCtx.Preferences
+                    .Include(p => p.Description)
+                    .Include(p => p.BurialPreferences)
+                    .FirstAsync(p => p.Id == preferenceId);
+                dbCtx.Preferences.Remove(preference);
+                await dbCtx.SaveChangesAsync();
+            }
         }
 
         public Task<Models.Preference.Preference> GetPreferenceById(int preferenceId)
