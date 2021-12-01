@@ -1,12 +1,29 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Threading.Tasks;
+using Tier3.DataAccess;
+using Tier3.Models;
 
 namespace Tier3.Repositories.Preference
 {
     public class PreferenceRepo : IPreferenceRepo
     {
-        public Task<string> CreatePreference(Models.Preference.Preference preference)
+        private DataBaseContext dbCtx;
+        private IList<Models.Preference.Preference> _preferences;
+
+        public PreferenceRepo()
         {
-            throw new System.NotImplementedException();
+            _preferences = new List<Models.Preference.Preference>();
+        }
+        
+        public async Task CreatePreference(Models.Preference.Preference preference)
+        {
+            await using (dbCtx = new DataBaseContext())
+            {
+                preference.BurialPreferences = new Collection<BurialPreference>();
+                await dbCtx.Preferences.AddAsync(preference);
+                await dbCtx.SaveChangesAsync();
+            }
         }
 
         public Task<Models.Preference.Preference> GetPreference(int preferenceId)

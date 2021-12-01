@@ -4,7 +4,7 @@ namespace Tier3.Repositories.Preference
 {
     public interface IPreferenceRepo
     {
-        Task<string> CreatePreference(Models.Preference.Preference preference);
+        Task CreatePreference(Models.Preference.Preference preference);
         Task<Models.Preference.Preference> GetPreference(int preferenceId);
         Task<string> EditPreference(Models.Preference.Preference preference);
         Task DeletePreference(int preferenceId);
