@@ -32,7 +32,7 @@ namespace Tier3.Repositories.Preference
             await using (dbCtx = new DataBaseContext())
             {
                 return await dbCtx.Preferences
-                    .Include(p => p.BurialPreferences)
+                    .Include(p => p.Description)
                     .ToListAsync();
             }
         }
@@ -59,12 +59,17 @@ namespace Tier3.Repositories.Preference
             }
         }
 
-        public Task<Models.Preference.Preference> GetPreferenceById(int preferenceId)
+        public async Task<Models.Preference.Preference> GetPreferenceById(int preferenceId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                return await dbCtx.Preferences
+                    .Include(p => p.Description)
+                    .FirstAsync(p => p.Id == preferenceId);
+            }
         }
 
-        public Task<Models.Preference.Preference> GetPreferenceByBurialId(int burialId)
+        public async Task<Models.Preference.Preference> GetPreferenceByBurialId(int burialId)
         {
             throw new System.NotImplementedException();
         }
