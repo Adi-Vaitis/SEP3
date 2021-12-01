@@ -175,7 +175,16 @@ namespace Tier3.Repositories.Client
 
         public async Task DeletePreferenceFromBurial(int burialId, int preferenceId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                BurialPreference burialPreference = dbCtx.Burial
+                    .Where(b => b.Id == burialId)
+                    .SelectMany(buri => buri.BurialPreferences)
+                    .First(buri => buri.Preference.Id == preferenceId);
+                dbCtx.Remove(burialPreference);
+                Console.WriteLine("preference deleted");
+                await dbCtx.SaveChangesAsync();
+            }
         }
     }
 }
