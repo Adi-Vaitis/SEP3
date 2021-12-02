@@ -6,7 +6,9 @@ using System.Net.Sockets;
 using System.Text;
 using System.Text.Json;
 using System.Threading;
+using Tier3.Networking.Burial;
 using Tier3.Networking.Client;
+using Tier3.Networking.Preference;
 using Tier3.Networking.Utility;
 
 namespace Tier3.Networking.Communication
@@ -15,11 +17,15 @@ namespace Tier3.Networking.Communication
     {
         private static List<TcpClient> _clients;
         private ServerClientHandler _clientHandler;
+        private ServerBurialHandler _burialHandler;
+        private ServerPreferenceHandler _preferenceHandler;
 
         public SocketServer()
         {
             _clients = new List<TcpClient>();
             _clientHandler = new ServerClientHandler();
+            _burialHandler = new ServerBurialHandler();
+            _preferenceHandler = new ServerPreferenceHandler();
         }
 
         public void StartServer()
@@ -56,6 +62,36 @@ namespace Tier3.Networking.Communication
                     {
                         case "LOGIN":
                             _clientHandler.GetClient(stream, req1.Content);
+                            break;
+                        case "PREFERENCES":
+                            _preferenceHandler.GetPreferences(stream);
+                            break;
+                        case "BURIALS":
+                            _burialHandler.GetBurials(stream, req1.Content);
+                            break;
+                        case "REGISTER":
+                            _clientHandler.CreateClientAccount(stream, req1.Content);
+                            break;
+                        case "DELETECLIENT":
+                            _clientHandler.Delete(req1.Content);
+                            break;
+                        case "GETCLIENTBYUSERNAME":
+                            _clientHandler.GetAccountByUsername(stream, req1.Content);
+                            break;
+                        case "GETCLIENTBTID":
+                            _clientHandler.GetUserById(stream, req1.Content);
+                            break;
+                        case "DELETEBURIAL":
+                            _burialHandler.DeleteBurial(req1.Content);
+                            break;
+                        case "EDITBURIAL":
+                            _burialHandler.EditBurial(req1.Content);
+                            break;
+                        case "ADDBURIAL":
+                            _burialHandler.AddBurial(req1.Content);
+                            break;
+                        case "ADDPREFERENCE":
+                            _preferenceHandler.AddPreference(req1.Content);
                             break;
                         default:
                             string reply = JsonSerializer.Serialize("Tier3");

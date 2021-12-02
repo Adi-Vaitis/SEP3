@@ -10,6 +10,6 @@ namespace Tier3.Repositories.Preference
         Task EditPreference(Models.Preference.Preference preference);
         Task DeletePreference(int preferenceId);
         Task<Models.Preference.Preference> GetPreferenceById(int preferenceId);
-        Task<Models.Preference.Preference> GetPreferenceByBurialId(int burialId);
+        Task<IList<Models.Preference.Preference>> GetPreferenceByBurialId(int burialId);
     }
 }

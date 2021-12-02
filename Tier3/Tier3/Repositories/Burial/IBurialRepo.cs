@@ -10,5 +10,6 @@ namespace Tier3.Repositories.Burial
         Task DeleteBurial(int burialId);
         Task<Models.Burial.Burial> GetBurial(int burialId);
         Task<IList<Models.Preference.Preference>> GetPreferencesForBurial(int burialId);
+        Task<IList<Models.Burial.Burial>> GetBurialsForClient(int clientId);
     }
 }
