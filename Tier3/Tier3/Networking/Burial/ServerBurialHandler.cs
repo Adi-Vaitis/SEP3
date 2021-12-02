@@ -45,5 +45,11 @@ namespace Tier3.Networking.Burial
             Models.Burial.Burial burial = JsonSerializer.Deserialize<Models.Burial.Burial>(content);
             await burialRepo.EditBurial(burial);
         }
+
+        public async void DeleteBurial(string content)
+        {
+            int id = Int32.Parse(content);
+            await burialRepo.DeleteBurial(id);
+        }
     }
 }
