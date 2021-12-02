@@ -24,6 +24,12 @@ namespace Tier3.Networking.Preference
             byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
             stream.Write(bytesWrite, 0, bytesWrite.Length);
         }
+
+        public async void AddPreference(string content)
+        {
+            Models.Preference.Preference preference = JsonSerializer.Deserialize<Models.Preference.Preference>(content);
+            await preferenceRepo.CreatePreference(preference);
+        }
         
         
     }
