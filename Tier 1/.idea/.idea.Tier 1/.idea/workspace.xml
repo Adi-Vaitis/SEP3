@@ -5,21 +5,11 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="methods">
-      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/AddPreference.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/ViewBurialsPreferences.razor" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="working on pages">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/PersonalPage.razor" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Error.cshtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Error.cshtml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/FirstPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/FirstPage.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Login.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Logout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Logout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/RegisterAccount.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/RegisterAccount.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/NavMenu.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/NavMenu.razor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/SurveyPrompt.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638436927516</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="working on pages">
+      <created>1638439374692</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1638439374692</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +314,7 @@
     <MESSAGE value="service class implemented" />
     <MESSAGE value="PreferenceService.cs class" />
     <MESSAGE value="methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="methods" />
+    <MESSAGE value="working on pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on pages" />
   </component>
 </project>
