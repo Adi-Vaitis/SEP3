@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Net.Http;
+using System.Text.Json;
 using System.Threading.Tasks;
 using Tier_1.Models.Burial;
 
@@ -6,9 +8,13 @@ namespace Tier_1.Data.BurialService
 {
     public class BurialService : IBurialService
     {
-        public Task<IList<Burial>> GetBurialsAsync(int clientId)
+        public async Task<IList<Burial>> GetBurialsAsync(int clientId)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string uri = "https://localhost:8080/burials?ClientId=" + $"{clientId}";
+            string message = await httpClient.GetStringAsync(uri);
+            IList<Burial> result = JsonSerializer.Deserialize<IList<Burial>>(message);
+            return result;
         }
 
         public Task CreateBurial(Burial burial)
