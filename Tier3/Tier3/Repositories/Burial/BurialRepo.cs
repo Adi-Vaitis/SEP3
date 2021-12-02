@@ -94,5 +94,23 @@ namespace Tier3.Repositories.Burial
                 return preferenceList;
             }
         }
+
+        public async Task<IList<Models.Burial.Burial>> GetBurialsForClient(int clientId)
+        {
+            await using (dbsCtx = new DataBaseContext())
+            {
+                Models.Client.Client client = dbsCtx.Clients
+                    .Include(c => c.Burials)
+                    .First(c => c.Id == clientId);
+                IList<Models.Burial.Burial> burialList = new List<Models.Burial.Burial>();
+                foreach (var variable in client.Burials)
+                {
+                    burialList.Add(variable);
+                    Console.WriteLine(variable.ToString());
+                }
+
+                return burialList;
+            }
+        }
     }
 }
