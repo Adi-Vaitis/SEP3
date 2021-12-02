@@ -5,11 +5,10 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="working on tier 1">
-      <change afterPath="$PROJECT_DIR$/Tier 1/Data/BurialService/BurialService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tier 1/Data/BurialService/IBurialService.cs" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="create burial method">
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Data/BurialService/BurialService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Data/BurialService/BurialService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,17 +25,19 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/BurialService/BurialService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/BurialService/BurialService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21aFVnVMs7HdS4Yn4u5VU4kQza2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -208,7 +209,28 @@
       <option name="project" value="LOCAL" />
       <updated>1638434153063</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="working on tier 1">
+      <created>1638436081567</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1638436081567</updated>
+    </task>
+    <task id="LOCAL-00018" summary="get burials method">
+      <created>1638436177355</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1638436177355</updated>
+    </task>
+    <task id="LOCAL-00019" summary="create burial method">
+      <created>1638436293686</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1638436293686</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +269,8 @@
     <MESSAGE value="main page draft" />
     <MESSAGE value="Register page" />
     <MESSAGE value="working on tier 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on tier 1" />
+    <MESSAGE value="get burials method" />
+    <MESSAGE value="create burial method" />
+    <option name="LAST_COMMIT_MESSAGE" value="create burial method" />
   </component>
 </project>
