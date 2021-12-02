@@ -5,11 +5,11 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="working on pages">
-      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/PersonalPage.razor" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="PersonalPage.razor">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/EditBurial.razor" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/CreateBurial.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/CreateBurial.razor" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638439374692</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="PersonalPage.razor">
+      <created>1638446852507</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1638446852507</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +322,7 @@
     <MESSAGE value="PreferenceService.cs class" />
     <MESSAGE value="methods" />
     <MESSAGE value="working on pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="working on pages" />
+    <MESSAGE value="PersonalPage.razor" />
+    <option name="LAST_COMMIT_MESSAGE" value="PersonalPage.razor" />
   </component>
 </project>
