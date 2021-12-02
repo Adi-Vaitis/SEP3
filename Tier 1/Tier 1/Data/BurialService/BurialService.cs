@@ -44,9 +44,11 @@ namespace Tier_1.Data.BurialService
             Console.WriteLine(responseMessage.StatusCode.ToString());
         }
 
-        public Task DeleteBurial(int burialId)
+        public async Task DeleteBurial(int burialId)
         {
-            throw new System.NotImplementedException();
+            HttpClient client = new HttpClient();
+            HttpResponseMessage responseMessage = await client.DeleteAsync("https://localhost:8080/burials/" + burialId);
+            Console.WriteLine(responseMessage.StatusCode.ToString());
         }
     }
 }
