@@ -5,11 +5,21 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="service class implemented">
-      <change afterPath="$PROJECT_DIR$/Tier 1/Data/PreferenceService/IPreferenceService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tier 1/Data/PreferenceService/PreferenceService.cs" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="methods">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/AddPreference.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/ViewBurialsPreferences.razor" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Error.cshtml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/FirstPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/FirstPage.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Login.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Login.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Logout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Logout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/RegisterAccount.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/RegisterAccount.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/NavMenu.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/NavMenu.razor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/SurveyPrompt.razor" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +42,7 @@
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/BurialService/BurialService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/PreferenceService/PreferenceService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/BurialService/BurialService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
@@ -247,7 +258,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638436511407</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="PreferenceService.cs class">
+      <created>1638436802599</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1638436802599</updated>
+    </task>
+    <task id="LOCAL-00023" summary="methods">
+      <created>1638436927516</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1638436927516</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +315,8 @@
     <MESSAGE value="create burial method" />
     <MESSAGE value="edit burial method" />
     <MESSAGE value="service class implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="service class implemented" />
+    <MESSAGE value="PreferenceService.cs class" />
+    <MESSAGE value="methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="methods" />
   </component>
 </project>

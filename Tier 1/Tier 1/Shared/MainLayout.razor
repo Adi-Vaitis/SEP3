@@ -2,8 +2,8 @@
 @inject NavigationManager NavigationManager
 
 <div class="main">
-    <div class="topmenu">
-           <TopMenu/>
+    <div class="menu">
+           <Menu/>
        </div>
 
     <div class="content px-4">
@@ -23,7 +23,7 @@
             (await AuthStat).User;
         if (!user.Identity.IsAuthenticated)
         {
-            NavigationManager.NavigateTo($"/FirstPage");
+            NavigationManager.NavigateTo($"/");
         }
     }
 }

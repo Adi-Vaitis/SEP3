@@ -8,9 +8,9 @@
 <div class="container-fluid">
 
     <div class="row">
-        <div class="col-12" id="mainButtons">
-            <button type="button" @onclick="NavigateToLogin" class="mainButtons">Login</button>
-
+        <div class="col-12" id="firstPageButtons">
+            <button type="button" @onclick="NavigateToLogin" class="firstPageButtons">Login</button>
+            <button type="button" @onclick="NavigateToViewBurialsPreferences" class="firstPageButtons">Burials and Preferences</button>
         </div>
     </div>
 
@@ -20,5 +20,10 @@
     private void NavigateToLogin()
     {
         NavigationManager.NavigateTo("/Login");
+    }
+
+    private void NavigateToViewBurialsPreferences()
+    {
+        NavigationManager.NavigateTo("/ViewBurialsPreferences");
     }
 }
