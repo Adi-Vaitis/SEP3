@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Net.Http;
+using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Tier_1.Models.Burial;
@@ -17,9 +18,16 @@ namespace Tier_1.Data.BurialService
             return result;
         }
 
-        public Task CreateBurial(Burial burial)
+        public async Task CreateBurial(Burial burial)
         {
-            throw new System.NotImplementedException();
+            HttpClient httpClient = new HttpClient();
+            string burialSerialized = JsonSerializer.Serialize(burial);
+            StringContent content = new StringContent(
+                burialSerialized,
+                Encoding.UTF8,
+                "application/json"
+            );
+            HttpResponseMessage responseMessage = await httpClient.PostAsync("https://localhost:8080/burials", content);
         }
 
         public Task EditBurial(Burial burial)
