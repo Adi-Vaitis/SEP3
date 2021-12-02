@@ -24,10 +24,15 @@ namespace Tier_1.Models.Burial
         [JsonPropertyName("comments")]
         public string Comments { get; set; }
 
-        public Burial(IList<Preference.Preference> preferenceForBurial, int clientId)
+        public Burial(IList<Preference.Preference> preferenceForBurial, int clientId, string location, DateTime date, string fullNameOfTheDeadMan, int numberOfParticipants, string comments)
         {
             PreferenceForBurial = preferenceForBurial;
             ClientId = clientId;
+            Location = location;
+            Date = date;
+            FullNameOfTheDeadMan = fullNameOfTheDeadMan;
+            NumberOfParticipants = numberOfParticipants;
+            Comments = comments;
         }
 
         public Burial()

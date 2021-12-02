@@ -1,6 +1,5 @@
 ﻿@page "/Login"
 @using Tier_1.Authentication
-@using Tier_1.Models
 @using Tier_1.Models.Client
 
 @inject AuthenticationStateProvider AuthenticationStateProvider
@@ -47,7 +46,7 @@
              Client client = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
              _username = "";
              _password = "";
-             NavigationManager.NavigateTo("/MyPage");
+             NavigationManager.NavigateTo("/ClientPage");
          }
          catch (Exception e)
          {
@@ -63,7 +62,7 @@
         try
         {
             ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
-            NavigationManager.NavigateTo("/FirstPage");
+            NavigationManager.NavigateTo("/");
         }
         catch (Exception e)
         {
