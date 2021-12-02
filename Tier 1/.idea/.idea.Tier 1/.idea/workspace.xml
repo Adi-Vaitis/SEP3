@@ -9,9 +9,7 @@
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Burial/ServerBurialHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Burial/ServerBurialHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/BurialRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/BurialRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/IBurialRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/IBurialRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Preference/ServerPreferenceHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Preference/ServerPreferenceHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
