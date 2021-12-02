@@ -5,18 +5,11 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="Register page">
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="working on tier 1">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Data/BurialService/BurialService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/Data/BurialService/IBurialService.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Models/Burial/Burial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Models/Burial/Burial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Models/Burial/Burial.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -44,7 +39,9 @@
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21aFVnVMs7HdS4Yn4u5VU4kQza2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -204,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638264204531</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="working on tier 1">
+      <created>1638434153063</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638434153063</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +246,7 @@
     <MESSAGE value="logout page" />
     <MESSAGE value="main page draft" />
     <MESSAGE value="Register page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Register page" />
+    <MESSAGE value="working on tier 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="working on tier 1" />
   </component>
 </project>
