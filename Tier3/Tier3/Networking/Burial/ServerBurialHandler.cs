@@ -33,5 +33,13 @@ namespace Tier3.Networking.Burial
             byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
             stream.Write(bytesWrite, 0, bytesWrite.Length);
         }
+
+        public async void AddBurial(string content)
+        {
+            Models.Burial.Burial burial = JsonSerializer.Deserialize<Models.Burial.Burial>(content);
+            await burialRepo.CreateBurial(burial);
+        }
+        
+        
     }
 }
