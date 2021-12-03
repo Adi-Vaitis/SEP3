@@ -8,7 +8,7 @@ namespace Tier3.Repositories.Burial
         Task CreateBurial(Models.Burial.Burial burial);
         Task EditBurial(Models.Burial.Burial burial);
         Task DeleteBurial(int burialId);
-        Task<Models.Burial.Burial> GetBurial(int burialId);
+        Task<List<Models.Burial.Burial>> GetBurial();
         Task<IList<Models.Preference.Preference>> GetPreferencesForBurial(int burialId);
         Task<IList<Models.Burial.Burial>> GetBurialsForClient(int clientId);
     }

@@ -88,7 +88,21 @@ using Tier_1.Data;
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
+using Tier_1.Data.BurialService;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
 using Tier_1.Data.ClientService;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
+using Tier_1.Data.PreferenceService;
 
 #line default
 #line hidden
@@ -100,11 +114,13 @@ using Tier_1.Data.ClientService;
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
             __builder.AddMarkupContent(0, "<h1>Hello, world!</h1>\r\n\r\nWelcome to your new app.\r\n\r\n");
-            __builder.OpenComponent<Tier_1.Shared.SurveyPrompt>(1);
+            __builder.OpenElement(1, "SurveyPrompt");
             __builder.AddAttribute(2, "Title", "How is Blazor working for you?");
-            __builder.CloseComponent();
+            __builder.CloseElement();
         }
         #pragma warning restore 1998
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPreferenceService PreferenceService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBurialService BurialService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }
     }
 }

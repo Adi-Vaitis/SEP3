@@ -72,25 +72,6 @@ namespace Tier3.Repositories.Client
             }
         }
 
-        public async Task<string> EditClientAccount(Models.Client.Client client)
-        {
-            await using (dbCtx = new DataBaseContext())
-            {
-                Models.Client.Client client1 = await dbCtx.Clients
-                    .Include(c => c.Burials)
-                    .FirstAsync(cc => cc.Id == client.Id);
-                client1.Username = client.Username;
-                client1.Password = client.Password;
-                client1.Name = client.Name;
-                client1.Email = client.Email;
-
-                dbCtx.Clients.Update(client1);
-                await dbCtx.SaveChangesAsync();
-            }
-
-            return "Client updated";
-        }
-
         public async Task<Models.Client.Client> GetClientByUsername(string username)
         {
             await using (dbCtx = new DataBaseContext())

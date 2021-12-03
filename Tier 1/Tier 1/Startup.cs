@@ -11,7 +11,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Tier_1.Authentication;
+using Tier_1.Data.BurialService;
 using Tier_1.Data.ClientService;
+using Tier_1.Data.PreferenceService;
 
 namespace Tier_1
 {
@@ -30,7 +32,9 @@ namespace Tier_1
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddSingleton<IPreferenceService, PreferenceService>();
             services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IBurialService, BurialService>();
             services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
 
             services.AddAuthorization(options =>

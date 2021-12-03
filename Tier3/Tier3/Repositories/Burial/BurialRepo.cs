@@ -53,11 +53,11 @@ namespace Tier3.Repositories.Burial
                 Models.Burial.Burial burial = await dbsCtx.Burial
                     .Include(b => b.Client)
                     .Include(b1 => b1.BurialPreferences)
-                    .Include(b2 => b2.Comments)
+                  //  .Include(b2 => b2.Comments)
                     .Include(b3 => b3.Date)
-                    .Include(b4 => b4.Location)
-                    .Include(b5 => b5.NumberOfParticipants)
-                    .Include(b6 => b6.FullNameOfTheDeadMan)
+                  //  .Include(b4 => b4.Location)
+                  //  .Include(b5 => b5.NumberOfParticipants)
+                 //   .Include(b6 => b6.FullNameOfTheDeadMan)
                     .FirstAsync(bur => bur.Id == burialId);
                 burial.Client = new Models.Client.Client();
                 burial.BurialPreferences = new Collection<BurialPreference>();
@@ -67,13 +67,13 @@ namespace Tier3.Repositories.Burial
             }
         }
 
-        public async Task<Models.Burial.Burial> GetBurial(int burialId)
+        public async Task<List<Models.Burial.Burial>> GetBurial()
         {
             await using (dbsCtx = new DataBaseContext())
             {
                 return await dbsCtx.Burial
                     .Include(burial => burial.Client)
-                    .FirstAsync(b => b.Id == burialId);
+                    .ToListAsync();
             }
         }
 

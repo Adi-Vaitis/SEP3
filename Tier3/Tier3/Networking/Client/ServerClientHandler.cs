@@ -28,15 +28,6 @@ namespace Tier3.Networking.Client
             stream.Write(bytesWrite, 0, bytesWrite.Length);
         }
 
-        public async void CreateClientAccount(NetworkStream stream, string content)
-        {
-            Models.Client.Client client1 = JsonSerializer.Deserialize<Models.Client.Client>(content);
-            String input = await clientRepo.EditClientAccount(client1);
-            string reply = JsonSerializer.Serialize(input);
-            byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
-            stream.Write(bytesWrite, 0, bytesWrite.Length);
-        }
-        
         public async void Delete(string content)
         {
             await clientRepo.DeleteClient(Int32.Parse(content));
