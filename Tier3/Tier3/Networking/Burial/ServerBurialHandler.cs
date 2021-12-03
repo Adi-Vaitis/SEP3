@@ -51,5 +51,13 @@ namespace Tier3.Networking.Burial
             int id = Int32.Parse(content);
             await burialRepo.DeleteBurial(id);
         }
+
+        public async void GetSingleBurial(NetworkStream stream)
+        {
+            burials = await burialRepo.GetBurial();
+            string reply = JsonSerializer.Serialize(burials);
+            byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
+            stream.Write(bytesWrite, 0, bytesWrite.Length);
+        }
     }
 }

@@ -6,6 +6,7 @@ namespace Tier3.Models.Preference
 {
     public class Preference
     {
+        [Key]
         [JsonPropertyName("id")]
         public int Id { get; set; }
         [JsonPropertyName("burial"), Required]

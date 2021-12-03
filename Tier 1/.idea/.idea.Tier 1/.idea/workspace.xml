@@ -5,11 +5,62 @@
     <projectFile profileName="Tier 1">Tier 1/Tier 1.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="PersonalPage.razor">
-      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/EditBurial.razor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/CreateBurial.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/CreateBurial.razor" afterDir="false" />
+    <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/ref/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/ref/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/App.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/_Imports.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/_Imports.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorComponent.input.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorComponent.input.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorCoreGenerate.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.TagHelpers.output.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/ref/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/ref/Tier 1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/Shared/NavMenu.razor.rz.scp.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/bundle/Tier 1.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/bundle/Tier 1.styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/projectbundle/Tier 1.bundle.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/projectbundle/Tier 1.bundle.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/DataBaseContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Burial/Burial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Burial/Burial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Employee/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Employee/Employee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Preference/Preference.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Preference/Preference.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Burial/ServerBurialHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Burial/ServerBurialHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Client/ServerClientHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Client/ServerClientHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Communication/SocketServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Communication/SocketServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/BurialRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/BurialRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/IBurialRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/IBurialRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/ClientRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/ClientRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/IClientRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/IClientRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +77,7 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/TopMenu.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/TopMenu.razor.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/_Imports.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/ClientService/ClientService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs" root0="SKIP_HIGHLIGHTING" />
@@ -276,7 +326,21 @@
       <option name="project" value="LOCAL" />
       <updated>1638446852507</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="working">
+      <created>1638447206521</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1638447206521</updated>
+    </task>
+    <task id="LOCAL-00027" summary="hope it works">
+      <created>1638447415562</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1638447415562</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +363,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Tier 1" />
     <MESSAGE value="yes" />
     <MESSAGE value="testing" />
     <MESSAGE value="Implementing tier 1" />
@@ -323,6 +386,8 @@
     <MESSAGE value="methods" />
     <MESSAGE value="working on pages" />
     <MESSAGE value="PersonalPage.razor" />
-    <option name="LAST_COMMIT_MESSAGE" value="PersonalPage.razor" />
+    <MESSAGE value="working" />
+    <MESSAGE value="hope it works" />
+    <option name="LAST_COMMIT_MESSAGE" value="hope it works" />
   </component>
 </project>

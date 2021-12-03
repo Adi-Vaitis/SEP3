@@ -7,6 +7,7 @@ namespace Tier3.Models.Burial
 {
     public class Burial
     {
+        [Key]
         [JsonPropertyName("id")]
         public int Id { get; set; }
         [JsonPropertyName("preferences")]

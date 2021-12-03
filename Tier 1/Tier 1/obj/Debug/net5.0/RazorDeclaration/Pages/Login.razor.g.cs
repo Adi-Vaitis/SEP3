@@ -91,7 +91,21 @@ using Tier_1.Data;
 #nullable disable
 #nullable restore
 #line 12 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
+using Tier_1.Data.BurialService;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 13 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
 using Tier_1.Data.ClientService;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 14 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\_Imports.razor"
+using Tier_1.Data.PreferenceService;
 
 #line default
 #line hidden
@@ -105,13 +119,6 @@ using Tier_1.Authentication;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Login.razor"
-using Tier_1.Models;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 4 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Login.razor"
 using Tier_1.Models.Client;
 
 #line default
@@ -126,7 +133,7 @@ using Tier_1.Models.Client;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 35 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Login.razor"
+#line 34 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Login.razor"
  
     private string _username;
     private string _password;
@@ -142,7 +149,7 @@ using Tier_1.Models.Client;
              Client client = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
              _username = "";
              _password = "";
-             NavigationManager.NavigateTo("/MyPage");
+             NavigationManager.NavigateTo("/ClientPage");
          }
          catch (Exception e)
          {
@@ -158,7 +165,7 @@ using Tier_1.Models.Client;
         try
         {
             ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
-            NavigationManager.NavigateTo("/FirstPage");
+            NavigationManager.NavigateTo("/");
         }
         catch (Exception e)
         {
@@ -176,6 +183,8 @@ using Tier_1.Models.Client;
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPreferenceService PreferenceService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBurialService BurialService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }
     }
 }

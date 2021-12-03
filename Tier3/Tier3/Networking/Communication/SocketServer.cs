@@ -69,9 +69,6 @@ namespace Tier3.Networking.Communication
                         case "BURIALS":
                             _burialHandler.GetBurials(stream, req1.Content);
                             break;
-                        case "REGISTER":
-                            _clientHandler.CreateClientAccount(stream, req1.Content);
-                            break;
                         case "DELETECLIENT":
                             _clientHandler.Delete(req1.Content);
                             break;

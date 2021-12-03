@@ -5,6 +5,7 @@ namespace Tier3.Models.Employee
 {
     public class Employee
     {
+        [Key]
         [JsonPropertyName("id")]
         public int Id { get; set; }
         [JsonPropertyName("username"), Required]
