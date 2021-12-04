@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Tier_1.Shared
+namespace Tier_1.Pages
 {
     #line hidden
     using System;
@@ -110,7 +110,15 @@ using Tier_1.Data.PreferenceService;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+#nullable restore
+#line 2 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\RegisterAccount.razor"
+using Tier_1.Models.Client;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/RegisterAccount")]
+    public partial class RegisterAccount : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -118,25 +126,53 @@ using Tier_1.Data.PreferenceService;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Shared\MainLayout.razor"
- 
-    [CascadingParameter]
-    protected Task<AuthenticationState> AuthStat { get; set; }
+#line 29 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\RegisterAccount.razor"
+       
+    private string _username;
+    private string _name;
+    private string _password;
+    private string _errorMessage;
 
-    protected override async Task OnInitializedAsync()
+    private async Task CreateAccount()
     {
-        await base.OnInitializedAsync();
-        var user = (await AuthStat).User;
-        if (!user.Identity.IsAuthenticated)
+        _errorMessage = "";
+        try
         {
-            NavigationManager.NavigateTo($"/");
+            if (!_name.Any() || !_username.Any() || !_password.Any())
+            {
+                return;
+            }
+            Client newClient = new Client(_username, _name, _password);
+            String result = await ClientService.CreateClientAccount(newClient);
+            if (result.Equals("\"Account already exists\""))
+            {
+                _errorMessage = result;
+                _username = "";
+                _name = "";
+                _password = "";
+                return;
+            }
+            _username = "";
+            _name = "";
+            _password = "";
+            NavigationManager.NavigateTo("/Login");
         }
+        catch (Exception e)
+        {
+            _errorMessage = "All fields are required.";
+        }
+    }
+
+    private void GoToLogIn()
+    {
+        NavigationManager.NavigateTo("/Login");
     }
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService clientService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPreferenceService PreferenceService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBurialService BurialService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }

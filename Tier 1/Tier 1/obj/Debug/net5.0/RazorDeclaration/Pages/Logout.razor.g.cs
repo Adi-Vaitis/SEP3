@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Tier_1.Shared
+namespace Tier_1.Pages
 {
     #line hidden
     using System;
@@ -110,7 +110,22 @@ using Tier_1.Data.PreferenceService;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+#nullable restore
+#line 2 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Logout.razor"
+using Tier_1.Authentication;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Logout.razor"
+using Tier_1.Models.Client;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/Logout")]
+    public partial class Logout : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -118,25 +133,31 @@ using Tier_1.Data.PreferenceService;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Shared\MainLayout.razor"
- 
-    [CascadingParameter]
-    protected Task<AuthenticationState> AuthStat { get; set; }
+#line 7 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Logout.razor"
+       
+    private Client client;
 
     protected override async Task OnInitializedAsync()
     {
-        await base.OnInitializedAsync();
-        var user = (await AuthStat).User;
-        if (!user.Identity.IsAuthenticated)
+        client = ((CustomAuthenticationStateProvider) AuthenticationStateProvider).CachedUser;
+        try
         {
-            NavigationManager.NavigateTo($"/");
+            ((CustomAuthenticationStateProvider) AuthenticationStateProvider).Logout();
+            NavigationManager.NavigateTo("/");
         }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        
     }
+
 
 #line default
 #line hidden
 #nullable disable
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPreferenceService PreferenceService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBurialService BurialService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }
