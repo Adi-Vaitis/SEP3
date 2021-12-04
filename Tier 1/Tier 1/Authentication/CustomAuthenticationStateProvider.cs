@@ -27,10 +27,10 @@ namespace Tier_1.Authentication
             var identity = new ClaimsIdentity();
             if (CachedUser == null)
             {
-                string clientAsJson = await _jsRuntime.InvokeAsync<string>("sessionStorage.getItem", "currentUser");
-                if (!string.IsNullOrEmpty(clientAsJson))
+                string userAsJson = await _jsRuntime.InvokeAsync<string>("sessionStorage.getItem", "currentUser");
+                if (!string.IsNullOrEmpty(userAsJson))
                 {
-                    CachedUser = JsonSerializer.Deserialize<Client>(clientAsJson);
+                    CachedUser = JsonSerializer.Deserialize<Client>(userAsJson);
 
                     identity = SetupClaimsForUser(CachedUser);
                 }

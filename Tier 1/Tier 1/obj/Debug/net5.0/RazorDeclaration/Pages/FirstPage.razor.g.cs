@@ -4,7 +4,7 @@
 #pragma warning disable 0649
 #pragma warning disable 0169
 
-namespace Tier_1.Shared
+namespace Tier_1.Pages
 {
     #line hidden
     using System;
@@ -110,7 +110,8 @@ using Tier_1.Data.PreferenceService;
 #line default
 #line hidden
 #nullable disable
-    public partial class MainLayout : LayoutComponentBase
+    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
+    public partial class FirstPage : LayoutComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -118,19 +119,16 @@ using Tier_1.Data.PreferenceService;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 15 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Shared\MainLayout.razor"
- 
-    [CascadingParameter]
-    protected Task<AuthenticationState> AuthStat { get; set; }
-
-    protected override async Task OnInitializedAsync()
+#line 19 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\FirstPage.razor"
+       
+    private void NavigateToLogin()
     {
-        await base.OnInitializedAsync();
-        var user = (await AuthStat).User;
-        if (!user.Identity.IsAuthenticated)
-        {
-            NavigationManager.NavigateTo($"/");
-        }
+        NavigationManager.NavigateTo("/Login");
+    }
+
+    private void NavigateToViewBurialsPreferences()
+    {
+        NavigationManager.NavigateTo("/ViewBurialsPreferences");
     }
 
 #line default
