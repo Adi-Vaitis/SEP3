@@ -59,3 +59,5 @@ C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\PersonalPage.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\ViewBurialsPreferences.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Shared\Menu.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\ClientPage.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\ClientPage.razor.g.cs

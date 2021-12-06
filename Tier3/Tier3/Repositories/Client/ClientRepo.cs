@@ -19,7 +19,7 @@ namespace Tier3.Repositories.Client
             {
                 foreach (var variable in dbCtx.Clients)
                 {
-                    if (variable.Id == client.Id)
+                    if (variable.Username.Equals(client.Username))
                     {
                         Console.WriteLine("Account already exists");
                         return "Account already exists";
@@ -32,6 +32,7 @@ namespace Tier3.Repositories.Client
                 Console.WriteLine("Account created");
                 await dbCtx.SaveChangesAsync();
             }
+            Console.WriteLine("REGISTER!!!!!!!!!!!!!!!");
             return "Account created";
         }
 

@@ -27,6 +27,16 @@ namespace Tier3.Networking.Client
             byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
             stream.Write(bytesWrite, 0, bytesWrite.Length);
         }
+        
+        public async void Register(NetworkStream stream, string content)
+        {
+            Models.Client.Client test = JsonSerializer.Deserialize<Models.Client.Client>(content);
+            string input = await clientRepo.CreateClientAccount(test);
+            string reply = JsonSerializer.Serialize(input);
+            byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
+            stream.Write(bytesWrite, 0, bytesWrite.Length);
+            Console.WriteLine("REGISTER!!!!!!!!!!!!!!!");
+        }
 
         public async void Delete(string content)
         {
