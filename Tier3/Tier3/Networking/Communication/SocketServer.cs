@@ -60,6 +60,10 @@ namespace Tier3.Networking.Communication
 
                     switch (req1.NetworkType)
                     {
+                        case "REGISTER":
+                            _clientHandler.Register(stream, req1.Content);
+                            Console.WriteLine("REGISTER!!!!!!!!!!!!!!!");
+                            break;
                         case "LOGIN":
                             _clientHandler.GetClient(stream, req1.Content);
                             break;

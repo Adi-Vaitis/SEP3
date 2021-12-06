@@ -52,18 +52,18 @@ namespace Tier_1.Authentication
             if (string.IsNullOrEmpty(client.Password)) throw new Exception("Enter password");
 
             ClaimsIdentity identity = new ClaimsIdentity();
-            try
-            {
+           // try
+          //  {
                 user = await _clientService.ValidateClient(client);
                 identity = SetupClaimsForUser(user);
                 string serialisedData = JsonSerializer.Serialize(user);
                 await _jsRuntime.InvokeVoidAsync("sessionStorage.setItem", "currentUser", serialisedData);
                 CachedUser = user;
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
+         //   }
+          //  catch (Exception e)
+         //   {
+           //     throw e;
+          //  }
 
             NotifyAuthenticationStateChanged(
                 Task.FromResult(new AuthenticationState(new ClaimsPrincipal(identity))));

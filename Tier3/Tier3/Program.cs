@@ -9,18 +9,18 @@ namespace Tier3
 {
     class Program
     {
-        static async Task Main(string[] args)
+        public static void Main(string[] args)
         {
-            using (DataBaseContext dataBaseContext = new DataBaseContext())
+         /*   using (DataBaseContext dataBaseContext = new DataBaseContext())
             {
                 DummyData(dataBaseContext);
-            }
+            }*/
             
             SocketServer socketServer = new SocketServer();
             socketServer.StartServer();
         }
 
-        private static void DummyData(DataBaseContext dataBaseContext)
+      /*  private static void DummyData(DataBaseContext dataBaseContext)
         {
             ClientRepo clientRepo = new ClientRepo();
             Client client = new Client()
@@ -38,5 +38,6 @@ namespace Tier3
 
             dataBaseContext.SaveChanges();
         }
+        */
     }
 }

@@ -24,6 +24,7 @@ namespace Tier_1.Data.ClientService
             var response = httpClient.SendAsync(request).ConfigureAwait(false);
             var responseInfo = response.GetAwaiter().GetResult();
             string s = await responseInfo.Content.ReadAsStringAsync();
+            Console.WriteLine("REGISTEEEEER!!!!!!!!!!!!!!!");
             return s;
         }
 
@@ -50,23 +51,6 @@ namespace Tier_1.Data.ClientService
             HttpClient httpClient = new HttpClient();
             HttpResponseMessage responseMessage = await httpClient.DeleteAsync("http://localhost:8080/delete/" + clientId);
             Console.WriteLine(responseMessage.StatusCode.ToString());
-        }
-
-        public async Task<string> EditClientAccount(Client client)
-        {
-            HttpClient httpClient = new HttpClient();
-            string clientSerialized = JsonSerializer.Serialize(client);
-            var request = new HttpRequestMessage
-            {
-                Method = HttpMethod.Get,
-                RequestUri = new Uri("https://localhost:8080/update"),
-                Content = new StringContent(clientSerialized, Encoding.UTF8, "application/json")
-            };
-
-            var response = httpClient.SendAsync(request).ConfigureAwait(false);
-            var responseInfo = response.GetAwaiter().GetResult();
-            string s = await responseInfo.Content.ReadAsStringAsync();
-            return s;
         }
 
         public async Task<Client> GetClientByUsername(string username)
