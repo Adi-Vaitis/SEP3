@@ -20,10 +20,9 @@
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/20211129092112_DataBase.Designer.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/20211129092112_DataBase.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/DataBaseContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db-shm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db-wal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
