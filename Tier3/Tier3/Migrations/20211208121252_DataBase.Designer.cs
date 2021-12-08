@@ -9,7 +9,7 @@ using Tier3.DataAccess;
 namespace Tier3.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20211129092112_DataBase")]
+    [Migration("20211208121252_DataBase")]
     partial class DataBase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

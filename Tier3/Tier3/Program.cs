@@ -14,13 +14,15 @@ namespace Tier3
          /*   using (DataBaseContext dataBaseContext = new DataBaseContext())
             {
                 DummyData(dataBaseContext);
-            }*/
+            }
+            */
             
             SocketServer socketServer = new SocketServer();
             socketServer.StartServer();
         }
 
-      /*  private static void DummyData(DataBaseContext dataBaseContext)
+        /*
+      private static void DummyData(DataBaseContext dataBaseContext)
         {
             ClientRepo clientRepo = new ClientRepo();
             Client client = new Client()
