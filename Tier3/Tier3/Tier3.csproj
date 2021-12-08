@@ -14,5 +14,22 @@
       </PackageReference>
       <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.11" />
     </ItemGroup>
+    
+    <ItemGroup>
+        <Content Include="obj\Debug\net5.0\Tier3.AssemblyInfoInputs.cache" />
+        <Content Include="obj\Debug\net5.0\Tier3.assets.cache" />
+        <Content Include="obj\Debug\net5.0\Tier3.csprojAssemblyReference.cache" />
+        <Content Include="obj\Tier3.csproj.nuget.dgspec.json" />
+        <Content Include="obj\Tier3.csproj.nuget.g.props" />
+        <Content Include="obj\Tier3.csproj.nuget.g.targets" />
+        <Content Include="obj\project.assets.json" />
+        <Content Include="obj\project.nuget.cache" />
+        <Content Include="obj\project.packagespec.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+        <Compile Remove="Migrations\DataContextModelSnapshot.cs" />
+    </ItemGroup>
 
 </Project>
