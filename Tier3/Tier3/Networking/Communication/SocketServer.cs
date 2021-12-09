@@ -82,7 +82,7 @@ namespace Tier3.Networking.Communication
                         case "GETCLIENTBYUSERNAME":
                             _clientHandler.GetAccountByUsername(stream, req1.Content);
                             break;
-                        case "GETCLIENTBTID":
+                        case "GETCLIENTBYID":
                             _clientHandler.GetUserById(stream, req1.Content);
                             break;
                         case "DELETEBURIAL":
@@ -97,7 +97,7 @@ namespace Tier3.Networking.Communication
                         case "ADDPREFERENCE":
                             _preferenceHandler.AddPreference(req1.Content);
                             break;
-                        case "DELETEMPLOYEE":
+                        case "DELETEEMPLOYEE":
                             _employeeHandler.Delete(req1.Content);
                             break;
                         case "LOGINEMPLOYEE":

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Threading.Tasks;
-using Tier3.DataAccess;
-using Tier3.Models.Client;
-using Tier3.Networking.Communication;
-using Tier3.Repositories.Client;
+﻿using Tier3.Networking.Communication;
 
 namespace Tier3
 {
