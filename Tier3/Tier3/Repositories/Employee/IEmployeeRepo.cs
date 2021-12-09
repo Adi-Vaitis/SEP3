@@ -6,7 +6,6 @@ namespace Tier3.Repositories.Employee
     {
         Task<Models.Employee.Employee> GetEmployee(string username, string password);
         Task DeleteEmployee(int employeeId);
-        Task<string> EditEmployeeAccount(Models.Employee.Employee employee);
         Task<Models.Employee.Employee> GetEmployeeByUsername(string username);
         Task<Models.Employee.Employee> GetEmployeeById(int employeeId);
         Task EditBurial(Models.Burial.Burial burial);

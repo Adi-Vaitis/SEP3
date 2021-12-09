@@ -43,19 +43,28 @@ namespace Tier3.Repositories.Employee
             }
         }
 
-        public async Task<string> EditEmployeeAccount(Models.Employee.Employee employee)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public async Task<Models.Employee.Employee> GetEmployeeByUsername(string username)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Employee.Employee employee = await dbCtx.Employees
+                    .FirstAsync(c => c.Username.Equals(username));
+
+                return employee;
+            }
+            
         }
 
         public async Task<Models.Employee.Employee> GetEmployeeById(int employeeId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Employee.Employee employee = await dbCtx.Employees
+                    .FirstAsync(em => em.Id == employeeId);
+
+                return employee;
+            }
+            
         }
 
         public async Task EditBurial(Models.Burial.Burial burial)
