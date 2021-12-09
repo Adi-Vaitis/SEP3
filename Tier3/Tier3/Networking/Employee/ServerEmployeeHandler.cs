@@ -17,7 +17,7 @@ namespace Tier3.Networking.Employee
             employeeRepo = new EmployeeRepo();
         }
 
-        public async void GetClient(NetworkStream stream, string content)
+        public async void GetEmployee(NetworkStream stream, string content)
         {
             Models.Employee.Employee test = JsonSerializer.Deserialize<Models.Employee.Employee>(content);
             string username = test.Username;
