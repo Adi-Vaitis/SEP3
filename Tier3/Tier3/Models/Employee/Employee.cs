@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace Tier3.Models.Employee
@@ -14,7 +15,7 @@ namespace Tier3.Models.Employee
         [JsonPropertyName("password"), Required]
         public string Password { get; set; }
         
-        [JsonIgnore]
+        [NotMapped]
         public IList<EmployeeBurial> EmployeeBurials { get; set; }
     }
 }

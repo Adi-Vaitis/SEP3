@@ -104,21 +104,6 @@ namespace Tier3.Migrations
                     b.ToTable("ClientBurials");
                 });
 
-            modelBuilder.Entity("Tier3.Models.ClientPreference", b =>
-                {
-                    b.Property<int>("ClientId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("PreferenceId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("ClientId", "PreferenceId");
-
-                    b.HasIndex("PreferenceId");
-
-                    b.ToTable("ClientPreferences");
-                });
-
             modelBuilder.Entity("Tier3.Models.Employee.Employee", b =>
                 {
                     b.Property<int>("Id")
@@ -136,6 +121,21 @@ namespace Tier3.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employees");
+                });
+
+            modelBuilder.Entity("Tier3.Models.EmployeeBurial", b =>
+                {
+                    b.Property<int>("BurialId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasIndex("BurialId");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("EmployeeBurials");
                 });
 
             modelBuilder.Entity("Tier3.Models.Preference.Preference", b =>
@@ -207,23 +207,23 @@ namespace Tier3.Migrations
                     b.Navigation("Client");
                 });
 
-            modelBuilder.Entity("Tier3.Models.ClientPreference", b =>
+            modelBuilder.Entity("Tier3.Models.EmployeeBurial", b =>
                 {
-                    b.HasOne("Tier3.Models.Client.Client", "Client")
-                        .WithMany("ClientPreferences")
-                        .HasForeignKey("ClientId")
+                    b.HasOne("Tier3.Models.Burial.Burial", "Burial")
+                        .WithMany()
+                        .HasForeignKey("BurialId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Tier3.Models.Preference.Preference", "PreferenceClient")
-                        .WithMany("ClientPreferences")
-                        .HasForeignKey("PreferenceId")
+                    b.HasOne("Tier3.Models.Employee.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Client");
+                    b.Navigation("Burial");
 
-                    b.Navigation("PreferenceClient");
+                    b.Navigation("Employee");
                 });
 
             modelBuilder.Entity("Tier3.Models.Preference.Preference", b =>
@@ -249,15 +249,11 @@ namespace Tier3.Migrations
                     b.Navigation("Burials");
 
                     b.Navigation("ClientBurials");
-
-                    b.Navigation("ClientPreferences");
                 });
 
             modelBuilder.Entity("Tier3.Models.Preference.Preference", b =>
                 {
                     b.Navigation("BurialPreferences");
-
-                    b.Navigation("ClientPreferences");
                 });
 #pragma warning restore 612, 618
         }

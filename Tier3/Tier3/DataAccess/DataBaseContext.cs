@@ -46,14 +46,17 @@ namespace Tier3.DataAccess
                 .HasForeignKey(cb => cb.BurialId);
 
             modelBuilder.Entity<EmployeeBurial>()
-                .HasOne(eb => eb.Burial)
-                .WithMany(eb => eb.EmployeeBurials)
-                .HasForeignKey(eb => eb.BurialId);
-            
+                //.HasOne(eb => eb.Burial)
+                // .WithMany(eb => eb.EmployeeBurials);
+                // .HasForeignKey(eb => eb.BurialId);
+                .HasNoKey();
+
+
             modelBuilder.Entity<EmployeeBurial>()
-                .HasOne(eb => eb.Employee)
-                .WithMany(eb => eb.EmployeeBurials)
-                .HasForeignKey(eb => eb.EmployeeId);
+                //  .HasOne(eb => eb.Employee)
+                //   .WithMany(eb => eb.EmployeeBurials);
+                // .HasForeignKey(eb => eb.EmployeeId);
+                .HasNoKey();
 
             modelBuilder.Entity<Burial>()
                 .HasOne<Client>(b => b.Client)

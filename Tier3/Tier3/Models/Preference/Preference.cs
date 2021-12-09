@@ -16,7 +16,5 @@ namespace Tier3.Models.Preference
         
         [JsonIgnore]
         public IList<BurialPreference> BurialPreferences { get; set; }
-        [JsonIgnore]
-        public IList<ClientPreference> ClientPreferences { get; set; }
     }
 }

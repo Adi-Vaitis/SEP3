@@ -6,20 +6,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/DataAccess/DataBaseContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/DataAccess/DataBaseContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/20211208121252_DataBase.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/20211208121252_DataBase.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/DataBaseContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/DataBaseContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/20211208121252_DataBase.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/20211208121252_DataBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/DataBaseContextModelSnapshot.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Burial/Burial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Burial/Burial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Client/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Client/Employee.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/ClientBurial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/ClientBurial.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Client/ServerClientHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Client/ServerClientHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Communication/SocketServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Communication/SocketServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Employee/Employee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Employee/Employee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Preference/Preference.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Preference/Preference.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/BurialRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/BurialRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/ClientRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/ClientRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/IClientRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/IClientRepo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Employee/EmployeeRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Employee/EmployeeRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db-shm" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db-shm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db-wal" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Tier3.db-wal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/Tier3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/bin/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/Tier3.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/ref/Tier3.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/obj/Debug/net5.0/ref/Tier3.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

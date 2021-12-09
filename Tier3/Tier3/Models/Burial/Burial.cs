@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace Tier3.Models.Burial
@@ -31,7 +32,7 @@ namespace Tier3.Models.Burial
         public IList<BurialPreference> BurialPreferences { get; set; }
         [JsonIgnore]
         public IList<ClientBurial> ClientBurials { get; set; }
-        [JsonIgnore]
+        [NotMapped]
         public IList<EmployeeBurial> EmployeeBurials { get; set; }
     }
 }
