@@ -23,7 +23,5 @@ namespace Tier3.Models.Client
         
         [JsonIgnore]
         public IList<ClientBurial> ClientBurials { get; set; }
-        [JsonIgnore]
-        public IList<ClientPreference> ClientPreferences { get; set; }
     }
 }
