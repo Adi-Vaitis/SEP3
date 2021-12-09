@@ -23,7 +23,7 @@ namespace Tier3.Repositories.Employee
             }
             catch (Exception e)
             {
-                Console.WriteLine("Client doesn't exist");
+                Console.WriteLine("Employee doesn't exist");
             }
 
             return null;
@@ -66,30 +66,32 @@ namespace Tier3.Repositories.Employee
             }
             
         }
-
-        public async Task EditBurial(Models.Burial.Burial burial)
-        {
-            throw new System.NotImplementedException();
-        }
-
         public async Task DeleteBurial(int burialId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Burial.Burial burial = await dbCtx.Burial
+                    .Include(b => b.Client)
+                    .Include(b => b.Comments)
+                    .Include(b => b.Date)
+                    .Include(b => b.Location)
+                    .Include(b => b.NumberOfParticipants)
+                    .Include(b => b.FullNameOfTheDeadMan)
+                    .Include(b => b.BurialPreferences)
+                    .Include(b => b.ClientBurials)
+                    .Include(b => b.PreferenceForBurial)
+                    .FirstAsync(bur => bur.Id == burialId);
+                
+                dbCtx.Remove(burial);
+                Console.WriteLine("burial deleted");
+                await dbCtx.SaveChangesAsync();
+            }
         }
 
         public async Task<Models.Burial.Burial> GetBurial(int burialId)
         {
             throw new System.NotImplementedException();
         }
-
-        public async Task AddPreferenceToBurial(int burialId, int preferenceId)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public async Task DeletePreferenceFromBurial(int burialId, int preferenceId)
-        {
-            throw new System.NotImplementedException();
-        }
+        
     }
 }
