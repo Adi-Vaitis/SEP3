@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Tier3.DataAccess;
 
 namespace Tier3.Repositories.Employee
@@ -29,7 +31,16 @@ namespace Tier3.Repositories.Employee
 
         public async Task DeleteEmployee(int employeeId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Employee.Employee employee = await dbCtx.Employees
+                    .Include(e => e.Username)
+                    .Include(e => e.Password)
+                    .FirstAsync(em => em.Id == employeeId);
+
+                dbCtx.Employees.Remove(employee);
+                await dbCtx.SaveChangesAsync();
+            }
         }
 
         public async Task<string> EditEmployeeAccount(Models.Employee.Employee employee)
