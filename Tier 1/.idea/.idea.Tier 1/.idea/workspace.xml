@@ -7,6 +7,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/DataAccess/DataBaseContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/DataAccess/DataBaseContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/20211208121252_DataBase.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/20211208121252_DataBase.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/DataBaseContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Migrations/DataBaseContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Burial/Burial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Burial/Burial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/Client/Client.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/Client/Employee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Models/ClientBurial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Models/ClientBurial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Client/ServerClientHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Client/ServerClientHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Communication/SocketServer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Networking/Communication/SocketServer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/BurialRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Burial/BurialRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/ClientRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/ClientRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/IClientRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Client/IClientRepo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Employee/EmployeeRepo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Tier3/Tier3/Repositories/Employee/EmployeeRepo.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
