@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 
-namespace Tier3.Repositories.Employee
+namespace Tier_1.Data.EmployeeService
 {
-    public interface IEmployeeRepo
+    public interface IEmployeeService
     {
         Task<Models.Employee.Employee> GetEmployee(string username, string password);
         Task DeleteEmployee(int employeeId);

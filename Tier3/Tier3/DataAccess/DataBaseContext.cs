@@ -16,7 +16,7 @@ namespace Tier3.DataAccess
         public DbSet<Preference> Preferences { get; set; }
         public DbSet<BurialPreference> BurialPreferences { get; set; }
         public DbSet<ClientBurial> ClientBurials { get; set; }
-        public DbSet<ClientPreference> ClientPreferences { get; set; }
+        public DbSet<EmployeeBurial> EmployeeBurials { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -45,6 +45,19 @@ namespace Tier3.DataAccess
                 .WithMany(cb => cb.ClientBurials)
                 .HasForeignKey(cb => cb.BurialId);
 
+            modelBuilder.Entity<EmployeeBurial>()
+                //.HasOne(eb => eb.Burial)
+                // .WithMany(eb => eb.EmployeeBurials);
+                // .HasForeignKey(eb => eb.BurialId);
+                .HasNoKey();
+
+
+            modelBuilder.Entity<EmployeeBurial>()
+                //  .HasOne(eb => eb.Employee)
+                //   .WithMany(eb => eb.EmployeeBurials);
+                // .HasForeignKey(eb => eb.EmployeeId);
+                .HasNoKey();
+
             modelBuilder.Entity<Burial>()
                 .HasOne<Client>(b => b.Client)
                 .WithMany(b => b.Burials)
@@ -66,23 +79,6 @@ namespace Tier3.DataAccess
                 .HasOne(bp => bp.Preference)
                 .WithMany(bp => bp.BurialPreferences)
                 .HasForeignKey(bp => bp.PreferenceId);
-
-            modelBuilder.Entity<ClientPreference>()
-                .HasKey(cp => new
-                {
-                    cp.ClientId,
-                    cp.PreferenceId
-                });
-
-            modelBuilder.Entity<ClientPreference>()
-                .HasOne(cp => cp.Client)
-                .WithMany(cp => cp.ClientPreferences)
-                .HasForeignKey(cp => cp.ClientId);
-
-            modelBuilder.Entity<ClientPreference>()
-                .HasOne(cp => cp.PreferenceClient)
-                .WithMany(cp => cp.ClientPreferences)
-                .HasForeignKey(cp => cp.PreferenceId);
 
         }
     }
