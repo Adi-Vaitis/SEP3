@@ -90,7 +90,23 @@ namespace Tier3.Repositories.Employee
 
         public async Task<Models.Burial.Burial> GetBurial(int burialId)
         {
-            throw new System.NotImplementedException();
+            await using (dbCtx = new DataBaseContext())
+            {
+                Models.Burial.Burial burial = await dbCtx.Burial
+                    .Include(b => b.Client)
+                    .Include(b => b.Comments)
+                    .Include(b => b.Date)
+                    .Include(b => b.Location)
+                    .Include(b => b.NumberOfParticipants)
+                    .Include(b => b.FullNameOfTheDeadMan)
+                    .Include(b => b.BurialPreferences)
+                    .Include(b => b.ClientBurials)
+                    .Include(b => b.PreferenceForBurial)
+                    .FirstAsync(bur => bur.Id == burialId);
+
+                return burial;
+            }
+            
         }
         
     }
