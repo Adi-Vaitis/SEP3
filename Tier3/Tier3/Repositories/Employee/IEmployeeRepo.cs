@@ -4,7 +4,6 @@ namespace Tier3.Repositories.Employee
 {
     public interface IEmployeeRepo
     {
-        Task<string> CreateEmployeeAccount(Models.Employee.Employee employee);
         Task<Models.Employee.Employee> GetEmployee(string username, string password);
         Task DeleteEmployee(int employeeId);
         Task<string> EditEmployeeAccount(Models.Employee.Employee employee);

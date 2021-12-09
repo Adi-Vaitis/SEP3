@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using Tier3.DataAccess;
 
 namespace Tier3.Repositories.Employee
@@ -6,15 +8,23 @@ namespace Tier3.Repositories.Employee
     public class EmployeeRepo : IEmployeeRepo
     {
         private DataBaseContext dbCtx;
-        
-        public async Task<string> CreateEmployeeAccount(Models.Employee.Employee employee)
-        {
-            throw new System.NotImplementedException();
-        }
 
         public async Task<Models.Employee.Employee> GetEmployee(string username, string password)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                await using (dbCtx = new DataBaseContext())
+                {
+                    return dbCtx.Employees
+                        .First(c => c.Username.Equals(username) && c.Password.Equals(password));
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Client doesn't exist");
+            }
+
+            return null;
         }
 
         public async Task DeleteEmployee(int employeeId)
