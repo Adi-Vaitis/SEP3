@@ -13,18 +13,23 @@ namespace Tier_1.Data.ClientService
         public async Task<string> CreateClientAccount(Client client)
         {
             HttpClient httpClient = new HttpClient();
+            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
             string clientSerialized = JsonSerializer.Serialize(client);
+            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
+
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri("https://localhost:8080/register"),
+                RequestUri = new Uri("http://localhost:8080/register"),
                 Content = new StringContent(clientSerialized, Encoding.UTF8, "application/json")
             };
 
             var response = httpClient.SendAsync(request).ConfigureAwait(false);
+            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
             var responseInfo = response.GetAwaiter().GetResult();
+            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
             string s = await responseInfo.Content.ReadAsStringAsync();
-            Console.WriteLine("REGISTEEEEER!!!!!!!!!!!!!!!");
+            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
             return s;
         }
 
@@ -36,7 +41,7 @@ namespace Tier_1.Data.ClientService
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri("https://localhost:8080/login"),
+                RequestUri = new Uri($"http://localhost:8080/login/{client}"),
                 Content = new StringContent(clientSerialized, Encoding.UTF8, "application/json")
             };
 
@@ -44,7 +49,34 @@ namespace Tier_1.Data.ClientService
             var responseInfo = response.GetAwaiter().GetResult();
             string s = await responseInfo.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<Client>(s);
+         // Client client1 = ToObject<Client>(s);
+        //  return client1;
+
+
+          /* HttpResponseMessage response = await httpClient.GetAsync($"http://localhost:8080/login");
+          
+           if (!response.IsSuccessStatusCode)
+           {
+               throw new Exception($"{response.Content.ReadAsStringAsync().Result}");
+           }
+             
+           string result = await response.Content.ReadAsStringAsync();
+ 
+           client = ToObject<Client>(result);
+ 
+           return client;
+           */
         }
+        
+       /* private T ToObject<T>(String element)
+        {
+            var deserializeResult = JsonSerializer.Deserialize<T>(element, new JsonSerializerOptions()
+            {
+                PropertyNameCaseInsensitive = true
+            });
+            return deserializeResult;
+        }
+        */
 
         public async Task DeleteClient(int clientId)
         {
@@ -56,7 +88,7 @@ namespace Tier_1.Data.ClientService
         public async Task<Client> GetClientByUsername(string username)
         {
             HttpClient httpClient = new HttpClient();
-            string uri = "https://localhost:8080/accounts?Username=" + username;
+            string uri = "http://localhost:8080/accounts?Username=" + username;
             string message = await httpClient.GetStringAsync(uri);
 
             Client result = JsonSerializer.Deserialize<Client>(message);
@@ -66,7 +98,7 @@ namespace Tier_1.Data.ClientService
         public async Task<Client> GetClientById(int clientId)
         {
             HttpClient httpClient = new HttpClient();
-            string uri = "https://localhost:8080/accounts/" + clientId;
+            string uri = "http://localhost:8080/accounts/" + clientId;
             string message = await httpClient.GetStringAsync(uri);
             Client result = JsonSerializer.Deserialize<Client>(message);
             return result;
@@ -75,7 +107,7 @@ namespace Tier_1.Data.ClientService
         public async Task<IList<Client>> GetBurialsClient(int clientId)
         {
             HttpClient httpClient = new HttpClient();
-            string uri = "https://localhost:8080/burialsForTheClient/" + clientId;
+            string uri = "http://localhost:8080/burialsForTheClient/" + clientId;
             string message = await httpClient.GetStringAsync(uri);
 
             Console.WriteLine(message);
@@ -92,7 +124,7 @@ namespace Tier_1.Data.ClientService
                 Encoding.UTF8,
                 "application/json"
             );
-            HttpResponseMessage responseMessage = await httpClient.PostAsync("https://localhost:8080/addPreference/" + burialId, content);
+            HttpResponseMessage responseMessage = await httpClient.PostAsync("http://localhost:8080/addPreference/" + burialId, content);
             Console.WriteLine(responseMessage.StatusCode.ToString());
         }
 
@@ -104,7 +136,7 @@ namespace Tier_1.Data.ClientService
                 Encoding.UTF8,
                 "application/json"
             );
-            HttpResponseMessage responseMessage = await httpClient.PostAsync("https://localhost:8080/deletePreference/" + burialId, content);
+            HttpResponseMessage responseMessage = await httpClient.PostAsync("http://localhost:8080/deletePreference/" + burialId, content);
             Console.WriteLine(responseMessage.StatusCode.ToString());
         }
     }

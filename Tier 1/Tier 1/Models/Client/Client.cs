@@ -6,14 +6,9 @@ namespace Tier_1.Models.Client
 {
     public class Client
     {
-        [JsonPropertyName("id")]
-        [Required]
         public int Id { get; set; }
-        [JsonPropertyName("username"), Required]
         public string Username { get; set; }
-        [JsonPropertyName("name"), Required]
         public string Name { get; set; }
-        [JsonPropertyName("password"), Required]
         public string Password { get; set; }
         [JsonPropertyName("email")]
         public string Email { get; set; }
