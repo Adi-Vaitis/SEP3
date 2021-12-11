@@ -117,7 +117,7 @@ using Tier_1.Models.Client;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/RegisterAccount")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/register")]
     public partial class RegisterAccount : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -155,7 +155,7 @@ using Tier_1.Models.Client;
             _username = "";
             _name = "";
             _password = "";
-            NavigationManager.NavigateTo("/Login");
+            NavigationManager.NavigateTo("/login");
         }
         catch (Exception e)
         {
@@ -165,7 +165,7 @@ using Tier_1.Models.Client;
 
     private void GoToLogIn()
     {
-        NavigationManager.NavigateTo("/Login");
+        NavigationManager.NavigateTo("/login");
     }
 
 #line default

@@ -65,7 +65,6 @@ namespace Tier3.Networking.Communication
                     {
                         case "REGISTER":
                             _clientHandler.Register(stream, req1.Content);
-                            Console.WriteLine("REGISTER!!!!!!!!!!!!!!!");
                             break;
                         case "LOGIN":
                             _clientHandler.GetClient(stream, req1.Content);
@@ -110,11 +109,12 @@ namespace Tier3.Networking.Communication
                             _employeeHandler.GetAccountByUsername(stream, req1.Content);
                             break;
                         default:
-                            string reply = JsonSerializer.Serialize("Tier3");
+                            string reply = JsonSerializer.Serialize("conFromTier3");
                             Console.WriteLine(reply);
                             byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
                             stream.Write(bytesWrite, 0, bytesWrite.Length);
                             break;
+                            
                     }
 
                     stream.Close();

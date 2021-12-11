@@ -1,4 +1,4 @@
-﻿@page "/Login"
+﻿@page "/login"
 @using Tier_1.Authentication
 @using Tier_1.Models.Client
 
@@ -43,14 +43,14 @@
         _errorMessage = "";
          try
          {
-             Client client = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
+              Client client = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
              _username = "";
              _password = "";
              NavigationManager.NavigateTo("/ClientPage");
          }
          catch (Exception e)
          {
-             _errorMessage = "Incorrect credentials";
+             _errorMessage = e.Message;
          }
     }
 
@@ -72,6 +72,6 @@
 
     private void GoToRegisterPage()
     {
-        NavigationManager.NavigateTo("/RegisterAccount");
+        NavigationManager.NavigateTo("/register");
     }
 }

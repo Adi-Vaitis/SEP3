@@ -39,7 +39,7 @@ namespace Tier_1
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("Moderator", a => a.RequireAuthenticatedUser().RequireClaim("Username", "ADMIN"));
+                options.AddPolicy("Moderator", a => a.RequireAuthenticatedUser().RequireClaim("Username", "moderator"));
             });
         }
 

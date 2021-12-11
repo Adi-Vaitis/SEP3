@@ -9,11 +9,14 @@ namespace Tier3.Models.Client
         [Key]
         [JsonPropertyName("id")]
         public int Id { get; set; }
-        [JsonPropertyName("username"), Required]
+        [Required]
+        [JsonPropertyName("username")]
         public string Username { get; set; }
+        [Required]
         [JsonPropertyName("name")]
         public string Name { get; set; }
-        [JsonPropertyName("password"), Required]
+        [Required]
+        [JsonPropertyName("password")]
         public string Password { get; set; }
         [JsonPropertyName("email")]
         public string Email { get; set; }

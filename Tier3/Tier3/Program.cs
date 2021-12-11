@@ -1,34 +1,37 @@
-﻿using Tier3.Networking.Communication;
+﻿using System;
+using System.Threading.Tasks;
+using Tier3.DataAccess;
+using Tier3.Models.Client;
+using Tier3.Networking.Communication;
+using Tier3.Repositories.Client;
 
 namespace Tier3
 {
     class Program
     {
-        public static void Main(string[] args)
+        public async static Task Main(string[] args)
         {
-         /*   using (DataBaseContext dataBaseContext = new DataBaseContext())
-            {
-                DummyData(dataBaseContext);
-            }
-            */
-            
+            //using (DataBaseContext dataBaseContext = new DataBaseContext())
+            // {
+           //     DummyData(dataBaseContext);
+           // }
+
+           await Populate();
             SocketServer socketServer = new SocketServer();
             socketServer.StartServer();
         }
 
-        /*
-      private static void DummyData(DataBaseContext dataBaseContext)
+    /*  private static void DummyData(DataBaseContext dataBaseContext)
         {
             ClientRepo clientRepo = new ClientRepo();
             Client client = new Client()
             {
-                Burials = null,
-                ClientBurials = null,
-                ClientPreferences = null,
-                Email = "client@yahoo.com",
-                Name = "Marius Babanu",
-                Password = "123456",
-                Username = "tzanca"
+                Id=2,
+                Username = "admin",
+                Name = "Admin",
+                Password = "admin",
+                Email = "admin.com",
+                Burials = null
             };
             //await clientRepo.CreateClientAccount(client);
             dataBaseContext.Add(client);
@@ -36,5 +39,18 @@ namespace Tier3
             dataBaseContext.SaveChanges();
         }
         */
+
+    static async Task Populate()
+    {
+        ClientRepo clientRepo = new ClientRepo();
+        Client moderator = new Client()
+        {
+            Username = "moderator",
+            Password = "123456",
+            Name = "sefu"
+        };
+        await clientRepo.CreateClientAccount(moderator);
+        
+    }
     }
 }
