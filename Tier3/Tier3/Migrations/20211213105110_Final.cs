@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Tier3.Migrations
 {
-    public partial class DatabaseFinal : Migration
+    public partial class Final : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,7 @@ namespace Tier3.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Username = table.Column<string>(type: "TEXT", nullable: false),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
                     Password = table.Column<string>(type: "TEXT", nullable: false),
                     Email = table.Column<string>(type: "TEXT", nullable: true)
                 },
@@ -86,29 +86,6 @@ namespace Tier3.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "EmployeeBurials",
-                columns: table => new
-                {
-                    EmployeeId = table.Column<int>(type: "INTEGER", nullable: false),
-                    BurialId = table.Column<int>(type: "INTEGER", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.ForeignKey(
-                        name: "FK_EmployeeBurials_Burial_BurialId",
-                        column: x => x.BurialId,
-                        principalTable: "Burial",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_EmployeeBurials_Employees_EmployeeId",
-                        column: x => x.EmployeeId,
-                        principalTable: "Employees",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Preferences",
                 columns: table => new
                 {
@@ -168,16 +145,6 @@ namespace Tier3.Migrations
                 column: "BurialId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_EmployeeBurials_BurialId",
-                table: "EmployeeBurials",
-                column: "BurialId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_EmployeeBurials_EmployeeId",
-                table: "EmployeeBurials",
-                column: "EmployeeId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Preferences_BurialId",
                 table: "Preferences",
                 column: "BurialId");
@@ -192,13 +159,10 @@ namespace Tier3.Migrations
                 name: "ClientBurials");
 
             migrationBuilder.DropTable(
-                name: "EmployeeBurials");
+                name: "Employees");
 
             migrationBuilder.DropTable(
                 name: "Preferences");
-
-            migrationBuilder.DropTable(
-                name: "Employees");
 
             migrationBuilder.DropTable(
                 name: "Burial");

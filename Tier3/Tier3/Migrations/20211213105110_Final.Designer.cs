@@ -9,8 +9,8 @@ using Tier3.DataAccess;
 namespace Tier3.Migrations
 {
     [DbContext(typeof(DataBaseContext))]
-    [Migration("20211209091359_DatabaseFinal")]
-    partial class DatabaseFinal
+    [Migration("20211213105110_Final")]
+    partial class Final
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -76,6 +76,7 @@ namespace Tier3.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Password")
@@ -123,21 +124,6 @@ namespace Tier3.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Employees");
-                });
-
-            modelBuilder.Entity("Tier3.Models.EmployeeBurial", b =>
-                {
-                    b.Property<int>("BurialId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("EmployeeId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasIndex("BurialId");
-
-                    b.HasIndex("EmployeeId");
-
-                    b.ToTable("EmployeeBurials");
                 });
 
             modelBuilder.Entity("Tier3.Models.Preference.Preference", b =>
@@ -207,25 +193,6 @@ namespace Tier3.Migrations
                     b.Navigation("BurialClient");
 
                     b.Navigation("Client");
-                });
-
-            modelBuilder.Entity("Tier3.Models.EmployeeBurial", b =>
-                {
-                    b.HasOne("Tier3.Models.Burial.Burial", "Burial")
-                        .WithMany()
-                        .HasForeignKey("BurialId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Tier3.Models.Employee.Employee", "Employee")
-                        .WithMany()
-                        .HasForeignKey("EmployeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Burial");
-
-                    b.Navigation("Employee");
                 });
 
             modelBuilder.Entity("Tier3.Models.Preference.Preference", b =>

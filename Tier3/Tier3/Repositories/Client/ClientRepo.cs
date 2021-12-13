@@ -47,7 +47,6 @@ namespace Tier3.Repositories.Client
             }
             catch (Exception e)
             {
-                //Console.WriteLine("Client doesn't exist");
                 throw new Exception("Account with username " + username + " not found");
             }
         }

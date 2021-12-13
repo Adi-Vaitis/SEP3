@@ -32,7 +32,5 @@ namespace Tier3.Models.Burial
         public IList<BurialPreference> BurialPreferences { get; set; }
         [JsonIgnore]
         public IList<ClientBurial> ClientBurials { get; set; }
-        [NotMapped]
-        public IList<EmployeeBurial> EmployeeBurials { get; set; }
     }
 }

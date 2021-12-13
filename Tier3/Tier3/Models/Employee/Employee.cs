@@ -15,7 +15,5 @@ namespace Tier3.Models.Employee
         [JsonPropertyName("password"), Required]
         public string Password { get; set; }
         
-        [NotMapped]
-        public IList<EmployeeBurial> EmployeeBurials { get; set; }
     }
 }

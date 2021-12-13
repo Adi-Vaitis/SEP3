@@ -16,7 +16,6 @@ namespace Tier3.DataAccess
         public DbSet<Preference> Preferences { get; set; }
         public DbSet<BurialPreference> BurialPreferences { get; set; }
         public DbSet<ClientBurial> ClientBurials { get; set; }
-        public DbSet<EmployeeBurial> EmployeeBurials { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -44,19 +43,6 @@ namespace Tier3.DataAccess
                 .HasOne(cb => cb.BurialClient)
                 .WithMany(cb => cb.ClientBurials)
                 .HasForeignKey(cb => cb.BurialId);
-
-            modelBuilder.Entity<EmployeeBurial>()
-                //.HasOne(eb => eb.Burial)
-                // .WithMany(eb => eb.EmployeeBurials);
-                // .HasForeignKey(eb => eb.BurialId);
-                .HasNoKey();
-
-
-            modelBuilder.Entity<EmployeeBurial>()
-                //  .HasOne(eb => eb.Employee)
-                //   .WithMany(eb => eb.EmployeeBurials);
-                // .HasForeignKey(eb => eb.EmployeeId);
-                .HasNoKey();
 
             modelBuilder.Entity<Burial>()
                 .HasOne<Client>(b => b.Client)

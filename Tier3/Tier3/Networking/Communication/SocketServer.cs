@@ -109,7 +109,7 @@ namespace Tier3.Networking.Communication
                             _employeeHandler.GetAccountByUsername(stream, req1.Content);
                             break;
                         default:
-                            string reply = JsonSerializer.Serialize("conFromTier3");
+                            string reply = JsonSerializer.Serialize("Tier3");
                             Console.WriteLine(reply);
                             byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
                             stream.Write(bytesWrite, 0, bytesWrite.Length);
