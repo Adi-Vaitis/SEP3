@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject NavigationManager NavigationManager
 
 <h1>Welcome to HTH</h1>
 <br>
@@ -20,7 +21,9 @@
         <div class="card-body">
             <h5 class="card-title">About Us</h5>
             <p class="card-text">Learn about our mission</p>
-            <button type="button" class="btn btn-info">Go to Page</button>
+
+            <button class="btn btn-primary" @onclick="AboutUsPage"> Go to page </button>
+
         </div>
         
         <div class="card-footer">
@@ -33,7 +36,7 @@
         <div class="card-body">
             <h5 class="card-title">Contact Us</h5>
             <p class="card-text">Write to us if you have any question</p>
-            <button type="button" class="btn btn-info">Go to Page</button>
+            <button class="btn btn-primary" @onclick="ContactPage"> Go to page </button>
         </div>
         <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
@@ -44,10 +47,29 @@
         <div class="card-body">
             <h5 class="card-title">Create Burial</h5>
             <p class="card-text">Start Customizing your own burial by your prefferences</p>
-            <button type="button" class="btn btn-info">Go to Page</button>
+            <button class="btn btn-primary" @onclick="CreateBurialPage"> Go to page </button>
         </div>
         <div class="card-footer">
             <small class="text-muted">Last updated 3 mins ago</small>
         </div>
     </div>
 </div>
+
+@code{
+
+    private void AboutUsPage()
+    {
+        NavigationManager.NavigateTo("AboutUs");
+    }
+    
+    private void CreateBurialPage()
+    {
+        NavigationManager.NavigateTo("CreateBurialRequest");
+    }
+    
+    private void ContactPage()
+    {
+        NavigationManager.NavigateTo("Contact");
+    }
+
+}
