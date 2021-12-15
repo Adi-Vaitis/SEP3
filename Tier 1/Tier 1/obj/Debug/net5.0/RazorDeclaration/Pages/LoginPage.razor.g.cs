@@ -110,6 +110,20 @@ using Tier_1.Data.PreferenceService;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 2 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\LoginPage.razor"
+using Tier_1.Models.Client;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\LoginPage.razor"
+using Tier_1.Authentication;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/LoginPage")]
     public partial class LoginPage : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -118,6 +132,35 @@ using Tier_1.Data.PreferenceService;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 177 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\LoginPage.razor"
+       
+  private string _username;
+  private string _password;
+  private string _errorMessage;
+  private Client client;
+  
+  private async Task Login()
+  {
+    _errorMessage = "";
+    try
+    {
+      Client user = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
+      _username = "";
+      _password = "";
+    //  NavigationManager.NavigateTo("Index");
+    }
+    catch (Exception e)
+    {
+      _errorMessage = e.Message;
+    }
+  }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private AuthenticationStateProvider AuthenticationStateProvider { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPreferenceService PreferenceService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBurialService BurialService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }

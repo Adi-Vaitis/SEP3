@@ -1,5 +1,14 @@
 ﻿@page "/LoginPage"
-<style>html {
+@using Tier_1.Models.Client
+@using Tier_1.Authentication
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+
+<AuthorizeView>
+  <NotAuthorized>
+
+    <style>html {
          height: 100%;
        }
        body {
@@ -140,26 +149,50 @@
      
        
 </style>
-<div class="login-box">
-   <h2>Login</h2>
-   <form>
-     <div class="user-box">
-       <input type="text" name="" required="">
-       <label>Username</label>
-     </div>
-     <div class="user-box">
-       <input type="password" name="" required="">
-       <label>Password</label>
-     </div>
-     <a href="#">
-       <span></span>
-       <span></span>
-       <span></span>
-       <span></span>
-       Login
-     </a>
-   </form>
- </div>
+    <div class="login-box">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" @bind-value="_username">
+          <label>Username</label>
+        </div>
+        <div class="user-box">
+          <input type="password" @bind-value="_password">
+          <label>Password</label>
+        </div>
+        <div  style="color:red">@_errorMessage</div>
+        <a @onclick="Login">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Login
+        </a>
+      </form>
+    </div>
+
+  </NotAuthorized>
+</AuthorizeView>
+
 @code {
-    
+  private string _username;
+  private string _password;
+  private string _errorMessage;
+  private Client client;
+  
+  private async Task Login()
+  {
+    _errorMessage = "";
+    try
+    {
+      Client user = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
+      _username = "";
+      _password = "";
+    //  NavigationManager.NavigateTo("Index");
+    }
+    catch (Exception e)
+    {
+      _errorMessage = e.Message;
+    }
+  }
 }
