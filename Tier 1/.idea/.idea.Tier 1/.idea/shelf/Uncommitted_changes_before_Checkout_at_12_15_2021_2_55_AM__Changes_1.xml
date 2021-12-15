@@ -1,0 +1,24 @@
+﻿<changelist name="Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM_[Changes]1" date="1639533375561" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 12/15/2021 2:55 AM [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" />
+    <option name="AFTER_PATH" value="Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM_[Changes]1/Tier 1.Views.dll" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Tier 1/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="Tier 1/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM_[Changes]1/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" />
+    <option name="AFTER_PATH" value="Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM_[Changes]1/Tier 1.pdb" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Tier 1/obj/Debug/net5.0/Tier 1.assets.cache" />
+    <option name="AFTER_PATH" value="Tier 1/obj/Debug/net5.0/Tier 1.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM_[Changes]1/Tier 1.assets.cache" />
+  </binary>
+</changelist>
