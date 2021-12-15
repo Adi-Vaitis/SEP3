@@ -10,7 +10,6 @@
     <div class="row">
         <div class="col-12" id="firstPageButtons">
             <button type="button" @onclick="NavigateToLogin" class="firstPageButtons">Login</button>
-            <button type="button" @onclick="NavigateToViewBurialsPreferences" class="firstPageButtons">Burials and Preferences</button>
         </div>
     </div>
 
@@ -19,11 +18,7 @@
 @code {
     private void NavigateToLogin()
     {
-        NavigationManager.NavigateTo("/Login");
+        NavigationManager.NavigateTo("/login");
     }
 
-    private void NavigateToViewBurialsPreferences()
-    {
-        NavigationManager.NavigateTo("/ViewBurialsPreferences");
-    }
 }

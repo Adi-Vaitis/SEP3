@@ -119,17 +119,13 @@ using Tier_1.Data.PreferenceService;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 19 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\FirstPage.razor"
+#line 18 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\FirstPage.razor"
        
     private void NavigateToLogin()
     {
-        NavigationManager.NavigateTo("/Login");
+        NavigationManager.NavigateTo("/login");
     }
 
-    private void NavigateToViewBurialsPreferences()
-    {
-        NavigationManager.NavigateTo("/ViewBurialsPreferences");
-    }
 
 #line default
 #line hidden

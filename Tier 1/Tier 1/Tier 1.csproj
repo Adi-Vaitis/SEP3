@@ -9,4 +9,10 @@
       <Folder Include="Models" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Shared\Menu.razor.css">
+        <DependentUpon>Menu.razor</DependentUpon>
+      </None>
+    </ItemGroup>
+
 </Project>

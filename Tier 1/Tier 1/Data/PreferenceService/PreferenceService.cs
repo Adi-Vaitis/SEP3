@@ -14,7 +14,7 @@ namespace Tier_1.Data.PreferenceService
         public async Task<IList<Preference>> GetPreferencesAsync()
         {
             HttpClient httpClient = new HttpClient();
-            string uri = "https://localhost:8080/preferences"; 
+            string uri = "http://localhost:8080/preferences"; 
             string message = await httpClient.GetStringAsync(uri);
 
             Console.WriteLine(message);
@@ -34,7 +34,7 @@ namespace Tier_1.Data.PreferenceService
             );
 
             HttpResponseMessage responseMessage =
-                await httpClient.PostAsync("https://localhost:8080/preferences", content);
+                await httpClient.PostAsync("http://localhost:8080/preferences", content);
             Console.WriteLine(responseMessage.StatusCode.ToString());
         }
     }
