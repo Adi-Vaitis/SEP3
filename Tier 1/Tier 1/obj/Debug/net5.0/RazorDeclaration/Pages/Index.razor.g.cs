@@ -118,6 +118,30 @@ using Tier_1.Data.PreferenceService;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 58 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Pages\Index.razor"
+      
+
+    private void AboutUsPage()
+    {
+        NavigationManager.NavigateTo("AboutUs");
+    }
+    
+    private void CreateBurialPage()
+    {
+        NavigationManager.NavigateTo("CreateBurialRequest");
+    }
+    
+    private void ContactPage()
+    {
+        NavigationManager.NavigateTo("Contact");
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPreferenceService PreferenceService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBurialService BurialService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }

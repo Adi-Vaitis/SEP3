@@ -81,10 +81,10 @@ namespace Tier_1.Authentication
         private ClaimsIdentity SetupClaimsForUser(Client user)
         {
             List<Claim> claims = new List<Claim>();
-          //  claims.Add(new Claim("ClientId", user.Id.ToString()));
-          //  claims.Add(new Claim(ClaimTypes.Name, user.Name));
-          //  claims.Add(new Claim("Username", user.Username));
-          //  claims.Add(new Claim("Password", user.Password));
+            claims.Add(new Claim("ClientId", user.Id.ToString()));
+            claims.Add(new Claim(ClaimTypes.Name, user.Name));
+            claims.Add(new Claim("Username", user.Username));
+            claims.Add(new Claim("Password", user.Password));
 
 
 
