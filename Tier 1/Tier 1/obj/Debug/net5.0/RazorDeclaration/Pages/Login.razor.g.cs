@@ -124,7 +124,7 @@ using Tier_1.Models.Client;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/Login")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/login")]
     public partial class Login : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -146,14 +146,14 @@ using Tier_1.Models.Client;
         _errorMessage = "";
          try
          {
-             Client client = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
+              Client client = await ((CustomAuthenticationStateProvider) AuthenticationStateProvider).ValidateLogin(new Client(_username, _password));
              _username = "";
              _password = "";
              NavigationManager.NavigateTo("/ClientPage");
          }
          catch (Exception e)
          {
-             _errorMessage = "Incorrect credentials";
+             _errorMessage = e.Message;
          }
     }
 
@@ -175,7 +175,7 @@ using Tier_1.Models.Client;
 
     private void GoToRegisterPage()
     {
-        NavigationManager.NavigateTo("/RegisterAccount");
+        NavigationManager.NavigateTo("/register");
     }
 
 #line default

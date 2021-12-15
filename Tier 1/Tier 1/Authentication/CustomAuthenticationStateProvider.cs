@@ -47,23 +47,23 @@ namespace Tier_1.Authentication
         public async Task<Client> ValidateLogin(Client client)
         {
             Client user;
-            Console.WriteLine("Validating log in");
             if (string.IsNullOrEmpty(client.Username)) throw new Exception("Enter Username");
             if (string.IsNullOrEmpty(client.Password)) throw new Exception("Enter password");
 
             ClaimsIdentity identity = new ClaimsIdentity();
-           // try
-          //  {
+            
+            try
+           {
                 user = await _clientService.ValidateClient(client);
                 identity = SetupClaimsForUser(user);
                 string serialisedData = JsonSerializer.Serialize(user);
                 await _jsRuntime.InvokeVoidAsync("sessionStorage.setItem", "currentUser", serialisedData);
                 CachedUser = user;
-         //   }
-          //  catch (Exception e)
-         //   {
-           //     throw e;
-          //  }
+            }
+            catch (Exception e)
+            {
+               throw e;
+           }
 
             NotifyAuthenticationStateChanged(
                 Task.FromResult(new AuthenticationState(new ClaimsPrincipal(identity))));
@@ -81,10 +81,11 @@ namespace Tier_1.Authentication
         private ClaimsIdentity SetupClaimsForUser(Client user)
         {
             List<Claim> claims = new List<Claim>();
-            claims.Add(new Claim(ClaimTypes.Name, user.Name));
-            claims.Add(new Claim("password", user.Password));
-            claims.Add(new Claim("Username", user.Username));
-            claims.Add(new Claim("userid", user.Id.ToString()));
+          //  claims.Add(new Claim("ClientId", user.Id.ToString()));
+          //  claims.Add(new Claim(ClaimTypes.Name, user.Name));
+          //  claims.Add(new Claim("Username", user.Username));
+          //  claims.Add(new Claim("Password", user.Password));
+
 
 
             ClaimsIdentity identity = new ClaimsIdentity(claims, "apiauth_type");

@@ -8,6 +8,7 @@ using System.Text.Json;
 using System.Threading;
 using Tier3.Networking.Burial;
 using Tier3.Networking.Client;
+using Tier3.Networking.Employee;
 using Tier3.Networking.Preference;
 using Tier3.Networking.Utility;
 
@@ -19,6 +20,7 @@ namespace Tier3.Networking.Communication
         private ServerClientHandler _clientHandler;
         private ServerBurialHandler _burialHandler;
         private ServerPreferenceHandler _preferenceHandler;
+        private ServerEmployeeHandler _employeeHandler;
 
         public SocketServer()
         {
@@ -26,6 +28,7 @@ namespace Tier3.Networking.Communication
             _clientHandler = new ServerClientHandler();
             _burialHandler = new ServerBurialHandler();
             _preferenceHandler = new ServerPreferenceHandler();
+            _employeeHandler = new ServerEmployeeHandler();
         }
 
         public void StartServer()
@@ -62,7 +65,6 @@ namespace Tier3.Networking.Communication
                     {
                         case "REGISTER":
                             _clientHandler.Register(stream, req1.Content);
-                            Console.WriteLine("REGISTER!!!!!!!!!!!!!!!");
                             break;
                         case "LOGIN":
                             _clientHandler.GetClient(stream, req1.Content);
@@ -79,7 +81,7 @@ namespace Tier3.Networking.Communication
                         case "GETCLIENTBYUSERNAME":
                             _clientHandler.GetAccountByUsername(stream, req1.Content);
                             break;
-                        case "GETCLIENTBTID":
+                        case "GETCLIENTBYID":
                             _clientHandler.GetUserById(stream, req1.Content);
                             break;
                         case "DELETEBURIAL":
@@ -94,12 +96,25 @@ namespace Tier3.Networking.Communication
                         case "ADDPREFERENCE":
                             _preferenceHandler.AddPreference(req1.Content);
                             break;
+                        case "DELETEEMPLOYEE":
+                            _employeeHandler.Delete(req1.Content);
+                            break;
+                        case "LOGINEMPLOYEE":
+                            _employeeHandler.GetEmployee(stream, req1.Content);
+                            break;
+                        case "GETEMPLOYEEBYID":
+                            _employeeHandler.GetUserById(stream, req1.Content);
+                            break;
+                        case "GETEMPLOYEEBYUSERNAME":
+                            _employeeHandler.GetAccountByUsername(stream, req1.Content);
+                            break;
                         default:
                             string reply = JsonSerializer.Serialize("Tier3");
                             Console.WriteLine(reply);
                             byte[] bytesWrite = Encoding.ASCII.GetBytes(reply);
                             stream.Write(bytesWrite, 0, bytesWrite.Length);
                             break;
+                            
                     }
 
                     stream.Close();

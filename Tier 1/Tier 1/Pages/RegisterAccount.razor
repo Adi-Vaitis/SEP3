@@ -1,4 +1,4 @@
-﻿@page "/RegisterAccount"
+﻿@page "/register"
 @using Tier_1.Models.Client
 @inject IClientService clientService
 @inject NavigationManager NavigationManager
@@ -54,7 +54,7 @@ display: none !important;
             _username = "";
             _name = "";
             _password = "";
-            NavigationManager.NavigateTo("/Login");
+            NavigationManager.NavigateTo("/login");
         }
         catch (Exception e)
         {
@@ -64,6 +64,6 @@ display: none !important;
 
     private void GoToLogIn()
     {
-        NavigationManager.NavigateTo("/Login");
+        NavigationManager.NavigateTo("/login");
     }
 }

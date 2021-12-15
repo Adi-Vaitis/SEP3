@@ -13,7 +13,7 @@ namespace Tier_1.Data.BurialService
         public async Task<IList<Burial>> GetBurialsAsync(int clientId)
         {
             HttpClient httpClient = new HttpClient();
-            string uri = "https://localhost:8080/burials?ClientId=" + $"{clientId}";
+            string uri = "http://localhost:8080/burials?ClientId=" + $"{clientId}";
             string message = await httpClient.GetStringAsync(uri);
             IList<Burial> result = JsonSerializer.Deserialize<IList<Burial>>(message);
             return result;
@@ -28,7 +28,7 @@ namespace Tier_1.Data.BurialService
                 Encoding.UTF8,
                 "application/json"
             );
-            HttpResponseMessage responseMessage = await httpClient.PostAsync("https://localhost:8080/burials", content);
+            HttpResponseMessage responseMessage = await httpClient.PostAsync("http://localhost:8080/burials", content);
         }
 
         public async Task EditBurial(Burial burial)
@@ -40,14 +40,14 @@ namespace Tier_1.Data.BurialService
                 Encoding.UTF8,
                 "application/json"
             );
-            HttpResponseMessage responseMessage = await httpClient.PatchAsync("https://localhost:8080/burials", content);
+            HttpResponseMessage responseMessage = await httpClient.PatchAsync("http://localhost:8080/burials", content);
             Console.WriteLine(responseMessage.StatusCode.ToString());
         }
 
         public async Task DeleteBurial(int burialId)
         {
             HttpClient client = new HttpClient();
-            HttpResponseMessage responseMessage = await client.DeleteAsync("https://localhost:8080/burials/" + burialId);
+            HttpResponseMessage responseMessage = await client.DeleteAsync("http://localhost:8080/burials/" + burialId);
             Console.WriteLine(responseMessage.StatusCode.ToString());
         }
     }

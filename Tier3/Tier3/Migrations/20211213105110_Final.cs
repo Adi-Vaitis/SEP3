@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Tier3.Migrations
 {
-    public partial class DataBase : Migration
+    public partial class Final : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,7 +14,7 @@ namespace Tier3.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Username = table.Column<string>(type: "TEXT", nullable: false),
-                    Name = table.Column<string>(type: "TEXT", nullable: true),
+                    Name = table.Column<string>(type: "TEXT", nullable: false),
                     Password = table.Column<string>(type: "TEXT", nullable: false),
                     Email = table.Column<string>(type: "TEXT", nullable: true)
                 },
@@ -129,30 +129,6 @@ namespace Tier3.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "ClientPreferences",
-                columns: table => new
-                {
-                    ClientId = table.Column<int>(type: "INTEGER", nullable: false),
-                    PreferenceId = table.Column<int>(type: "INTEGER", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_ClientPreferences", x => new { x.ClientId, x.PreferenceId });
-                    table.ForeignKey(
-                        name: "FK_ClientPreferences_Clients_ClientId",
-                        column: x => x.ClientId,
-                        principalTable: "Clients",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ClientPreferences_Preferences_PreferenceId",
-                        column: x => x.PreferenceId,
-                        principalTable: "Preferences",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
             migrationBuilder.CreateIndex(
                 name: "IX_Burial_ClientId",
                 table: "Burial",
@@ -169,11 +145,6 @@ namespace Tier3.Migrations
                 column: "BurialId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ClientPreferences_PreferenceId",
-                table: "ClientPreferences",
-                column: "PreferenceId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Preferences_BurialId",
                 table: "Preferences",
                 column: "BurialId");
@@ -186,9 +157,6 @@ namespace Tier3.Migrations
 
             migrationBuilder.DropTable(
                 name: "ClientBurials");
-
-            migrationBuilder.DropTable(
-                name: "ClientPreferences");
 
             migrationBuilder.DropTable(
                 name: "Employees");

@@ -32,7 +32,6 @@ namespace Tier3.Repositories.Client
                 Console.WriteLine("Account created");
                 await dbCtx.SaveChangesAsync();
             }
-            Console.WriteLine("REGISTER!!!!!!!!!!!!!!!");
             return "Account created";
         }
 
@@ -48,10 +47,8 @@ namespace Tier3.Repositories.Client
             }
             catch (Exception e)
             {
-                Console.WriteLine("Client doesn't exist");
+                throw new Exception("Account with username " + username + " not found");
             }
-
-            return null;
         }
 
         public async Task DeleteClient(int clientId)
@@ -77,9 +74,18 @@ namespace Tier3.Repositories.Client
         {
             await using (dbCtx = new DataBaseContext())
             {
-                Models.Client.Client client = await dbCtx.Clients
-                    .Include(cl => cl.Burials)
-                    .FirstAsync(c => c.Username.Equals(username));
+                Models.Client.Client client;
+                
+                try
+                {
+                    client = await dbCtx.Clients
+                        .Include(cl => cl.Burials)
+                        .FirstAsync(c => c.Username.Equals(username));
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("Not found, check credentials");
+                }
 
                 return client;
             }
@@ -89,10 +95,19 @@ namespace Tier3.Repositories.Client
         {
             await using (dbCtx = new DataBaseContext())
             {
-                Models.Client.Client client = await dbCtx.Clients
-                    .Include(cl => cl.Burials)
-                    .ThenInclude(c => c.BurialPreferences)
-                    .FirstAsync(cl => cl.Id == clientId);
+                Models.Client.Client client;
+
+                try
+                {
+                    client = await dbCtx.Clients
+                        .Include(cl => cl.Burials)
+                        .ThenInclude(c => c.BurialPreferences)
+                        .FirstAsync(cl => cl.Id == clientId);
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("Not found, check credentials");
+                }
 
                 return client;
             }

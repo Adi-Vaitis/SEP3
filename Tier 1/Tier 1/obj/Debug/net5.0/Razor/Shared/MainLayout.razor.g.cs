@@ -114,15 +114,18 @@ using Tier_1.Data.PreferenceService;
         {
             __builder.OpenElement(0, "div");
             __builder.AddAttribute(1, "class", "main");
-            __builder.OpenElement(2, "div");
-            __builder.AddAttribute(3, "class", "menu");
-            __builder.OpenComponent<Tier_1.Shared.Menu>(4);
+            __builder.AddAttribute(2, "b-x4f4yi664m");
+            __builder.OpenElement(3, "div");
+            __builder.AddAttribute(4, "class", "menu");
+            __builder.AddAttribute(5, "b-x4f4yi664m");
+            __builder.OpenComponent<Tier_1.Shared.Menu>(6);
             __builder.CloseComponent();
             __builder.CloseElement();
-            __builder.AddMarkupContent(5, "\r\n\r\n    ");
-            __builder.OpenElement(6, "div");
-            __builder.AddAttribute(7, "class", "content px-4");
-            __builder.AddContent(8, 
+            __builder.AddMarkupContent(7, "\r\n\r\n    ");
+            __builder.OpenElement(8, "div");
+            __builder.AddAttribute(9, "class", "content px-4");
+            __builder.AddAttribute(10, "b-x4f4yi664m");
+            __builder.AddContent(11, 
 #nullable restore
 #line 10 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Shared\MainLayout.razor"
          Body
