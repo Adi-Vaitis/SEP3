@@ -47,52 +47,27 @@ namespace Tier_1.Authentication
         public async Task<Client> ValidateLogin(Client client)
         {
             Client user;
-            Console.WriteLine("Validating log in");
             if (string.IsNullOrEmpty(client.Username)) throw new Exception("Enter Username");
-            Console.WriteLine("Validating log in");
-
             if (string.IsNullOrEmpty(client.Password)) throw new Exception("Enter password");
-            Console.WriteLine("Validating log in");
 
             ClaimsIdentity identity = new ClaimsIdentity();
-            Console.WriteLine("Validating log in");
-
-           try
+            
+            try
            {
                 user = await _clientService.ValidateClient(client);
-                Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 identity = SetupClaimsForUser(user);
                 string serialisedData = JsonSerializer.Serialize(user);
-                Console.WriteLine("before data send");
                 await _jsRuntime.InvokeVoidAsync("sessionStorage.setItem", "currentUser", serialisedData);
-                Console.WriteLine("data sent");
                 CachedUser = user;
             }
             catch (Exception e)
             {
-                //Console.WriteLine(e.ToString());
                throw e;
            }
 
             NotifyAuthenticationStateChanged(
                 Task.FromResult(new AuthenticationState(new ClaimsPrincipal(identity))));
             return CachedUser;
-            
-           
-         /*  Client client1 = await _clientService.ValidateClient(client);
-           Console.WriteLine("Validating log in");
-
-           identity = SetupClaimsForUser(client1);
-           Console.WriteLine("Validating log in");
-
-           string serialisedData = JsonSerializer.Serialize(client1);
-           Console.WriteLine($"Serialized data: {serialisedData}");
-           await _jsRuntime.InvokeVoidAsync("sessionStorage.setItem", "currentUser", serialisedData);
-           Console.WriteLine("after jsRuntime");
-           CachedUser = client1;
-
-           NotifyAuthenticationStateChanged(Task.FromResult(new AuthenticationState(new ClaimsPrincipal(identity))));
-           */
         }
         
         public void Logout()
@@ -106,10 +81,10 @@ namespace Tier_1.Authentication
         private ClaimsIdentity SetupClaimsForUser(Client user)
         {
             List<Claim> claims = new List<Claim>();
-            claims.Add(new Claim("ClientId", user.Id.ToString()));
-            claims.Add(new Claim(ClaimTypes.Name, user.Name));
-            claims.Add(new Claim("Username", user.Username));
-            claims.Add(new Claim("Password", user.Password));
+          //  claims.Add(new Claim("ClientId", user.Id.ToString()));
+          //  claims.Add(new Claim(ClaimTypes.Name, user.Name));
+          //  claims.Add(new Claim("Username", user.Username));
+          //  claims.Add(new Claim("Password", user.Password));
 
 
 

@@ -13,9 +13,7 @@ namespace Tier_1.Data.ClientService
         public async Task<string> CreateClientAccount(Client client)
         {
             HttpClient httpClient = new HttpClient();
-            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
             string clientSerialized = JsonSerializer.Serialize(client);
-            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
 
             var request = new HttpRequestMessage
             {
@@ -25,11 +23,8 @@ namespace Tier_1.Data.ClientService
             };
 
             var response = httpClient.SendAsync(request).ConfigureAwait(false);
-            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
             var responseInfo = response.GetAwaiter().GetResult();
-            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
             string s = await responseInfo.Content.ReadAsStringAsync();
-            Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!");
             return s;
         }
 
@@ -37,11 +32,11 @@ namespace Tier_1.Data.ClientService
         {
             HttpClient httpClient = new HttpClient();
             string clientSerialized = JsonSerializer.Serialize(client);
-            
+
             var request = new HttpRequestMessage
             {
                 Method = HttpMethod.Get,
-                RequestUri = new Uri($"http://localhost:8080/login/{client}"),
+                RequestUri = new Uri("http://localhost:8080/login"),
                 Content = new StringContent(clientSerialized, Encoding.UTF8, "application/json")
             };
 
@@ -49,34 +44,7 @@ namespace Tier_1.Data.ClientService
             var responseInfo = response.GetAwaiter().GetResult();
             string s = await responseInfo.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<Client>(s);
-         // Client client1 = ToObject<Client>(s);
-        //  return client1;
-
-
-          /* HttpResponseMessage response = await httpClient.GetAsync($"http://localhost:8080/login");
-          
-           if (!response.IsSuccessStatusCode)
-           {
-               throw new Exception($"{response.Content.ReadAsStringAsync().Result}");
-           }
-             
-           string result = await response.Content.ReadAsStringAsync();
- 
-           client = ToObject<Client>(result);
- 
-           return client;
-           */
         }
-        
-       /* private T ToObject<T>(String element)
-        {
-            var deserializeResult = JsonSerializer.Deserialize<T>(element, new JsonSerializerOptions()
-            {
-                PropertyNameCaseInsensitive = true
-            });
-            return deserializeResult;
-        }
-        */
 
         public async Task DeleteClient(int clientId)
         {
