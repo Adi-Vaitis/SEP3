@@ -117,26 +117,6 @@ using Tier_1.Data.PreferenceService;
         {
         }
         #pragma warning restore 1998
-#nullable restore
-#line 15 "/Users/admin/Documents/GitHub/SEP3/Tier 1/Tier 1/Shared/MainLayout.razor"
- 
-    [CascadingParameter]
-    protected Task<AuthenticationState> AuthStat { get; set; }
-
-    protected override async Task OnInitializedAsync()
-    {
-        await base.OnInitializedAsync();
-        var user = (await AuthStat).User;
-        if (!user.Identity.IsAuthenticated)
-        {
-            NavigationManager.NavigateTo($"/");
-        }
-    }
-
-#line default
-#line hidden
-#nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager NavigationManager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IPreferenceService PreferenceService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBurialService BurialService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IClientService ClientService { get; set; }
