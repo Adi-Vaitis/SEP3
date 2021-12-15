@@ -6,101 +6,99 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c22b5624-8518-4a19-997f-f307af80eb2b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/AboutUs.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/CreateBurialRequest.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/ManageBurialRequest.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/Pages/ManagePreferences.razor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/CreateBurialRequest.razor.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/ManageBurialRequest.razor.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/ManagePreferences.razor.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/AboutUs.razor.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/CreateBurialRequest.razor.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/ManageBurialRequest.razor.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/ManagePreferences.razor.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/Images/about_us.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/Images/brand.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/Images/cb.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/Images/createburial copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/Images/createburial.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/Images/grave.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/Images/grave1 copy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/Images/grave1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tier 1/wwwroot/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Checkout_at_12_15_2021_2_55_AM__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Merge_at_12_15_2021_2_56_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/shelf/Uncommitted_changes_before_Merge_at_12_15_2021_2_56_AM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Tier 1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/ClientPage.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/CreateBurial.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/EditBurial.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/FirstPage.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/About Us.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Contact.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Contact.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Create Burial Request.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Error.cshtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Error.cshtml.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Index.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Index.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Login.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Logout.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Manage Items and Services.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/Manage Items and Services.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/PersonalPage.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/RegisterAccount.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/ViewBurialsPreferences.razor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/Menu.razor.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.StaticWebAssets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/LoginPage.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/LoginPage.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Manage Burial Request.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/Manage Items and Services.razor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Pages/_Host.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Pages/_Host.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Shared/MainLayout.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/NavMenu.razor" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Shared/NavMenu.razor" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/NavMenu.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/Shared/NavMenu.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/Shared/SurveyPrompt.razor" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.Views.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.deps.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.runtimeconfig.dev.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.runtimeconfig.dev.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/Tier 1.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/appsettings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/ref/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/bin/Debug/net5.0/ref/Tier 1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/App.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/About Us.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/About Us.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/ClientPage.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/AboutUs.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/About Us.razor.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Contact.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Contact.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Create Burial Request.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Create Burial Request.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/CreateBurial.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/EditBurial.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/FirstPage.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Create Burial Request.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Login.razor.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/LoginPage.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/LoginPage.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Logout.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Manage Burial Request.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Manage Burial Request.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Manage Items and Services.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Manage Items and Services.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/PersonalPage.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/RegisterAccount.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/ViewBurialsPreferences.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Manage Burial Request.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/Manage Items and Services.razor.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/SurveyPrompt.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/_Imports.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/_Imports.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/About Us.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/About Us.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/ClientPage.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Contact.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Contact.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Create Burial Request.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Create Burial Request.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/CreateBurial.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/EditBurial.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/FirstPage.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Login.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/LoginPage.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/LoginPage.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Logout.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Manage Burial Request.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Manage Burial Request.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Manage Items and Services.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Manage Items and Services.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/PersonalPage.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/RegisterAccount.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/ViewBurialsPreferences.razor.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/Menu.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Razor/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/About Us.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Create Burial Request.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Manage Burial Request.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Pages/Manage Items and Services.razor.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/Tier 1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorComponent.input.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorComponent.input.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorCoreGenerate.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.RazorCoreGenerate.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.TagHelpers.output.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.TagHelpers.output.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.Views.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/Tier 1.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/ref/Tier 1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/ref/Tier 1.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/bundle/Tier 1.styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/bundle/Tier 1.styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/staticwebassets/Tier 1.StaticWebAssets.Manifest.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/staticwebassets/Tier 1.StaticWebAssets.Manifest.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/staticwebassets/Tier 1.StaticWebAssets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/staticwebassets/Tier 1.StaticWebAssets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Tier 1.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Tier 1.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Tier 1.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Tier 1.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tier 1/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/Shared/MainLayout.razor.rz.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/Shared/MainLayout.razor.rz.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/Shared/NavMenu.razor.rz.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/Shared/NavMenu.razor.rz.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/bundle/Tier 1.styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/projectbundle/Tier 1.bundle.scp.css" beforeDir="false" afterPath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/scopedcss/projectbundle/Tier 1.bundle.scp.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/staticwebassets/Tier 1.StaticWebAssets.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Tier 1\exportToHTML" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -113,7 +111,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Tier 1/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/vaiti/Documents/GitHub/SEP3/Tier 1/Tier 1/Data/BurialService/BurialService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="21aFVnVMs7HdS4Yn4u5VU4kQza2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -176,6 +173,7 @@
       <workItem from="1638837215670" duration="24153000" />
       <workItem from="1639519846172" duration="913000" />
       <workItem from="1639530356402" duration="1650000" />
+      <workItem from="1639599221538" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="Tier 1">
       <created>1638171366674</created>
