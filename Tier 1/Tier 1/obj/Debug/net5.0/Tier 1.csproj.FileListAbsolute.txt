@@ -100,17 +100,11 @@ C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\bin\Debug\net5.0\Tier 1.dll
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\bin\Debug\net5.0\ref\Tier 1.dll
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\bin\Debug\net5.0\Tier 1.pdb
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\bin\Debug\net5.0\Tier 1.Views.dll
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\bin\Debug\net5.0\Tier 1.Views.pdb
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorComponent.input.cache
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\App.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\About Us.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\Contact.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\Create Burial Request.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\Index.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\LoginPage.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\Manage Burial Request.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\Manage Items and Services.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\_Imports.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Shared\MainLayout.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Shared\NavMenu.razor.g.cs
@@ -120,21 +114,12 @@ C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.TagHe
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.TagHelpers.output.cache
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorCoreGenerate.cache
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\App.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\About Us.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\Contact.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\Create Burial Request.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\Index.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\LoginPage.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\Manage Burial Request.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\Manage Items and Services.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\_Imports.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Shared\MainLayout.razor.g.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Shared\NavMenu.razor.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorAssemblyInfo.cache
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorAssemblyInfo.cs
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\staticwebassets\Tier 1.StaticWebAssets.Manifest.cache
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\staticwebassets\Tier 1.StaticWebAssets.xml
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
@@ -142,7 +127,19 @@ C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\scopedcss\Sh
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\scopedcss\bundle\Tier 1.styles.css
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\scopedcss\projectbundle\Tier 1.bundle.scp.css
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorTargetAssemblyInfo.cache
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorTargetAssemblyInfo.cs
-C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.Views.pdb
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.genruntimeconfig.cache
 C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.csproj.CopyComplete
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\AboutUs.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\CreateBurialRequest.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\ManageBurialRequest.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\RazorDeclaration\Pages\ManagePreferences.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\AboutUs.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\CreateBurialRequest.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\ManageBurialRequest.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\ManagePreferences.razor.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\bin\Debug\net5.0\Tier 1.Views.pdb
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Razor\Pages\_Host.cshtml.g.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorAssemblyInfo.cache
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorAssemblyInfo.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.RazorTargetAssemblyInfo.cs
+C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\obj\Debug\net5.0\Tier 1.Views.pdb

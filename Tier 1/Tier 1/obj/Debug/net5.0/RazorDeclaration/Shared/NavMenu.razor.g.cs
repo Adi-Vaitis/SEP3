@@ -118,7 +118,7 @@ using Tier_1.Data.PreferenceService;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 43 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Shared\NavMenu.razor"
+#line 44 "C:\Users\vaiti\Documents\GitHub\SEP3\Tier 1\Tier 1\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 
